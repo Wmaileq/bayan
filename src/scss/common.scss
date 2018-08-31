@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+  &:hover, &:focus, &:active {
+  	outline: none
+  }
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: 'SourceSansPro', sans-serif;
+  background-color: #f8f8f8;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('fonts/GothamPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e7a029 linear-gradient(to left, rgba(#ea9f28,0.7), rgba(#d0c844, 0.7));
+  border: 0;
+  box-shadow: 0 0 24px 4px rgba(#ceb631, 0.22);
+  cursor: pointer;
+  transition: box-shadow 0.15s;
+  &_outfilled {
+    background: transparent;
+    border: 1px solid #e7a029;
+    transition: background-color 0.2s;
+    &:hover, &.active {
+      color: #fff;
+      background: #e7a029 linear-gradient(to left, rgba(#ea9f28,0.7), rgba(#d0c844, 0.7));
+    }
+  }
+  &:hover {
+    box-shadow: 0 0 24px 7px rgba(#ceb631, 0.3);
+  }
+}
+
+h2 {
+  font-family: 'Gotham Pro', sans-serif;
+  color: #e7a029;
+  font-size: 36px;
+  text-transform: uppercase;
+}
