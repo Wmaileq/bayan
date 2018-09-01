@@ -1,0 +1,164 @@
+$mainColor: #E6AA30;
+$lightColor: #9a9a9a;
+$textColor: #5e4b28;
+
+.about-company-tabs{
+  &__wrap{
+    position: relative;
+    padding: 0 172px;
+    overflow: hidden;
+  }
+
+  &__bg-img{
+    position: absolute;
+    z-index: -10;
+    overflow: hidden;
+  }
+
+  &__nav{
+    display: flex;
+    margin: 50px 0 70px;
+    justify-content: center;
+    flex-direction: row
+  }
+
+  &__nav-item{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: $mainColor;
+    text-transform: uppercase;
+    letter-spacing: 0.75;
+
+    transition: 0.3s all;
+  }
+
+  &__nav-item:hover,
+  &__nav-item.active{
+    color: #222;
+  }
+
+  // &__nav-item:first-child::after{
+  //   position: absolute;
+  //   top: 50%;
+  //   content: "•";
+  //   display: inline-block;
+  //   margin: 0 17px;
+  //   margin-top: -7px;
+  // }
+
+  // &__nav-item:last-child::before{
+  //   position: absolute;
+  //   top: 50%;
+  //   content: "•";
+  //   display: inline-block;
+  //   margin: 0 -22px;
+  //   margin-top: -7px;
+  // }
+
+  &__item{
+    display: none;
+  }
+
+  &__item-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__item-title{
+    margin-right: -120px;
+    z-index: 2;
+
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 60px;
+    color: $mainColor;
+    text-transform: uppercase;
+    letter-spacing: 0.75;
+  }
+
+  &__wrap-img{
+    position: relative;
+    margin-top: 15px;
+    margin-left: 15px;
+    box-shadow: 0 0 29px rgba(0,0,0,0.3);
+    border-radius: 9px;
+    //overflow: hidden;
+  }
+  &__wrap-img::after{
+    content: "";
+    position: absolute;
+    display: block;
+    top: -15px;
+    right: -15px;
+    bottom: 15px;
+    z-index: -10;
+
+    width: 75%;
+    height: 100%;
+
+    background-color: black;
+    background: linear-gradient( to left, #EFA827 0%, #E6D33B 100%);
+    box-shadow: 0 0 29px rgba(0,0,0,0.3);
+    border-radius: 9px;
+  }
+
+  &__img{
+    display: block;
+    border-radius: 9px;
+  }
+
+  &__wrap-text{
+    padding-right: 80px;
+  }
+  
+  &__text-title{
+    margin-top: 50px;
+
+    font-family: 'SourceSansPro', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: $lightColor;
+    letter-spacing: 0.50;
+    text-transform: uppercase;
+  }
+
+  &__text{
+    margin-top: 20px;
+
+    font-family: 'SourceSansPro', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: $textColor;
+    text-align: left;
+    line-height: 1.5;
+  }
+}
+
+.bg-img-yogurt{
+  top: 50px;
+  left: -61px;
+}
+
+.bg-img-bank{
+  bottom: 100px;
+  right: -93px;
+  width: 480px;
+  &__point{
+    
+  }
+}
+
+.active-item{
+  display: block;
+}
+
+.delimeter-dot{
+  display: inline-block;
+  padding: 11px 0 9px;
+  color: $mainColor;
+}
