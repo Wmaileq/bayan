@@ -24,6 +24,7 @@ const path = {
     src: {
         html: 'src/*.html',
         scss: 'src/scss/**/*.scss',
+        // sass: 'src/scss/**/*.sass',
         js: 'src/js/',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/*.*'
@@ -95,6 +96,7 @@ const build = gulp.series(buildHTML, buildCSS, buildJS, buildImgs, buildFonts);
 function watch() {
     gwatch(path.src.html, buildHTML);
     gwatch(path.src.scss, buildCSS);
+    // gwatch(path.src.sass, buildCSS);
     gwatch(path.src.js, buildJS);
     gwatch(path.src.img, buildImgs);
     gwatch(path.src.img, buildFonts);
