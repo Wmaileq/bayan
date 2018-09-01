@@ -1,34 +1,34 @@
 .main-offer{
- // background: url("img/bgMain-offer.png") no-repeat center top;
+ // background: url("img/bgMain-offer.png") no-repeat center bottom;  2 вариант
 	background-size: cover;
-position:relative;
+	position:relative;
 	margin-top: 164px;
 	color:white;
-	&:before{
+
+// бутылочки слева секции
+	&__aside{  
+		position: absolute;
+	}
+
+ // Бекграунд секции
+	&:after{   
 		content: '';
-position: absolute;
-left: 0;
-background: url("img/Main-offerProducts.png") no-repeat left top; 
-width: 611px;
-height: 424px;
+		position: absolute;
+		left: 0;
+		bottom: -90px;
+		z-index:-1;
+		background: url("img/bgMain-offer.png") no-repeat left top; 
+		background-size: cover;
+		width: 100%;
+		height: 850px;
 	}
-	&:after{
-				content: '';
-position: absolute;
-left: 0;
-bottom: -90px;
-z-index:-1;
-background: url("img/bgMain-offer.png") no-repeat left top; 
-background-size: cover;
-width: 100%;
-height: 850px;
-	}
+
 
 	&__container{
 		margin-left: 457px;
 		position: relative;
+		// круг у бутылок вверху
 		&:before{
-
 			top: 25px;
 			left: -255px;
 			height: 55px;
@@ -36,42 +36,43 @@ height: 850px;
 			content: '';
 			position: absolute;
 			background: url("img/Main-offerHelp.png") no-repeat left top; 
-			// &:hover{
-			// 	//вывод фигуры и текста
-			// 	height: 100px;
-			// }
 		}
+		//надпись у круга
 		&:after{
 			position: absolute;
 			background: url("img/main-offerHelpLine.png") no-repeat left top; 
 			content: 'Товарный ряд молочной продукции';
 			background-position:-5px 5px;
 			color:#e7a32b;
-				top: 48px;
+			top: 48px;
 			left: -225px;
 			font-size:14px;
 			width: 290px;
 			display: flex;
 			justify-content: flex-end;
-
-
 		}
 	}
 
-
+	// Заголовок
 	&__header{
 		padding-top: 132px;
-font-size:30px;
-font-family: 'Gotham Pro', sans-serif;
-font-weight:900;
-font-family: sans-serif;
-padding-bottom: 42px;
-	}
-	&__title{
-		padding-bottom: 52px;
-	font-size:20px;
-	font-weight:400;
-	font-family: 'Source Sans Pro', sans-serif;
+		font-size:30px;
+		font-family: 'Gotham Pro', sans-serif;
+		font-weight:900;
+		font-family: sans-serif;
+		padding-bottom: 42px;
 	}
 
+	// Подзаголовок
+	&__title{
+		padding-bottom: 52px;
+		font-size:20px;
+		font-weight:400;
+		font-family: 'Source Sans Pro', sans-serif;
+	}
+
+
+// &__button{
+// 	padding-bottom: 100px;     2 вариант
+// }
 }
