@@ -5,9 +5,22 @@
 	margin-top: 164px;
 	color:white;
 
-// бутылочки слева секции
-	&__aside{  
+&__img-wrap{
 		position: absolute;
+}
+// бутылочки слева секции
+	&__img{                       
+		position: relative;
+		//круг относительно бутылок 
+		&:after{		           //странная штука но этот after нигде не отображается 
+			content: '';	
+			background: url("img/Main-offerHelp.png") no-repeat left top; 
+			top: 0px;
+			right: 0px;
+			height: 55px;
+			width: 55px;
+			z-index: 100000;
+		}
 	}
 
  // Бекграунд секции
