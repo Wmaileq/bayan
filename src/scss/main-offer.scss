@@ -1,59 +1,59 @@
 .main-offer{
- // background: url("img/bgMain-offer.png") no-repeat center bottom;  2 вариант
-	background-size: cover;
+	// background: url("img/bgMain-offer.png") no-repeat center bottom;  2 вариант
 	position:relative;
 	margin-top: 164px;
+	background-size: cover;
 	color:white;
 
-&__img-wrap{
+	&__img-wrap{
 		position: absolute;
-}
-// бутылочки слева секции
-	&__img{                       
+	}
+	// бутылочки слева секции
+	&__img{
 		position: relative;
 		//круг относительно бутылок 
 		&:after{		           //странная штука но этот after нигде не отображается 
-			content: '';	
-			background: url("img/Main-offerHelp.png") no-repeat left top; 
-			top: 0px;
-			right: 0px;
+			content: '';
+			z-index: 10;
+			top: 0;
+			right: 0;
 			height: 55px;
 			width: 55px;
-			z-index: 100000;
+			background: url("img/Main-offerHelp.png") no-repeat left top;
 		}
 	}
 
- // Бекграунд секции
-	&:after{   
+	// Бекграунд секции
+	&:after{
 		content: '';
 		position: absolute;
 		left: 0;
 		bottom: -90px;
 		z-index:-1;
-		background: url("img/bgMain-offer.png") no-repeat left top; 
-		background-size: cover;
 		width: 100%;
 		height: 850px;
+		background: url("img/bgMain-offer.png") no-repeat left top;
+		background-size: cover;
 	}
 
 
 	&__container{
-		margin-left: 457px;
 		position: relative;
+		margin-left: 457px;
 		// круг у бутылок вверху
 		&:before{
+			content: '';
+			position: absolute;
 			top: 25px;
 			left: -255px;
 			height: 55px;
 			width: 55px;
-			content: '';
-			position: absolute;
-			background: url("img/Main-offerHelp.png") no-repeat left top; 
+			background: url("img/Main-offerHelp.png") no-repeat left top;
 		}
 		//надпись у круга
 		&:after{
 			position: absolute;
-			background: url("img/main-offerHelpLine.png") no-repeat left top; 
+			background: url("img/main-offerHelpLine.png") no-repeat left top;
 			content: 'Товарный ряд молочной продукции';
 			background-position:-5px 5px;
 			color:#e7a32b;
@@ -72,7 +72,6 @@
 		font-size:30px;
 		font-family: 'Gotham Pro', sans-serif;
 		font-weight:900;
-		font-family: sans-serif;
 		padding-bottom: 42px;
 	}
 
@@ -84,8 +83,7 @@
 		font-family: 'Source Sans Pro', sans-serif;
 	}
 
-
-// &__button{
-// 	padding-bottom: 100px;     2 вариант
-// }
+	// &__button{
+	// 	padding-bottom: 100px;     2 вариант
+	// }
 }
