@@ -26,6 +26,9 @@
     background: url('img/main-bottles.png') center center no-repeat;
     background-size: cover;
   }
+  @media (min-width: 1366px) {
+    min-height: calc(825px + ((100vw - 1366px)*325/554));
+  }
 
   &__menu {
     padding-left: 80px;
