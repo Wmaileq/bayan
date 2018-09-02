@@ -1,6 +1,7 @@
 .main-offer{
 	position:relative;
 	margin-top: 164px;
+	margin-bottom: 70px;
 	background-size: cover;
 	color:white;
 
@@ -86,3 +87,126 @@
 }
 
 
+
+
+
+//      video-card
+
+
+
+
+
+
+
+.video-card{
+	&__wrapper{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__text{
+		padding-left: 80px;
+		font-size:18px;
+		color:#5e4b28;
+	}
+	&__paragraph{
+		margin-bottom: 40px;
+		width: 550px;
+	}
+}
+
+.video-production{
+	&__cont-img{
+	border-radius:10px;
+	box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.13);
+	background-color: #3a3121;
+	position: relative;
+	//круг
+	&:after{		          
+		content: '';	
+		background: url("img/Main-offerHelp.png") no-repeat right top; 
+		left: -25px;
+		top: 280px;
+		position: absolute;
+		height: 55px;
+		width: 55px;
+	}
+	// надпись у круга
+	&:before{
+		position: absolute;
+		background: url("img/video-cardHelpLine.png") no-repeat left top; 
+		content: 'Товарный ряд молочной продукции';
+		padding-right: 130px;
+		background-position:150px 5px;
+		color:#e7a32b;
+		top: 300px;
+		left: -206px;
+		font-size:14px;
+		width: 290px;
+		display: flex;
+		align-items: center;
+	}
+}
+
+	&__play{
+	display: flex;
+	align-items: center;
+	position: absolute;
+	top: calc(50% - 32px);
+	left: 67px;
+	}
+
+	&__treug{
+	border: 17px solid transparent; 
+	border-left: 19px solid #e7a029; 
+	position: absolute;
+	top: 50%;
+	margin-top: -17px;
+	left: 50%;
+	z-index: 10;
+	margin-left: -8px	;
+	}
+
+	&__img{
+		opacity: 0.3;
+	}
+
+	&__circul{
+	position: absolute;
+	height: 63px;
+	width: 63px;
+	border-radius:50% ;
+	background-color: #fff;
+
+	&:after{
+		position: absolute;
+		transform:	rotate(-40deg);
+	top:-14px;
+	left: 30px;
+		height: 90px;
+		width: 2px;
+		content:"";
+		background-color: #fff;
+	}
+}
+
+	&__box{
+		z-index:-1;
+		content:"";
+		position: absolute;
+		width: 253px;
+		height: 209px;
+		background: #e7a029 linear-gradient(to left,rgba(234,159,40,.7),rgba(208,200,68,.7));
+		box-shadow: 0 0 24px 7px rgba(206,182,49,.3);
+		right: -10px;
+		top: -10px;
+		border-radius: 10px;
+	}
+
+	&__text{
+		font-size:24px;
+		font-weight:900;
+		color:white;
+		padding-left: 73px;
+	}
+}
