@@ -1,0 +1,216 @@
+$mainColor: #E6AA30;
+$lightColor: #9a9a9a;
+$textColor: #5e4b28;
+
+.about-company-tabs{
+  overflow: hidden;
+  &__wrap{
+    position: relative;
+    padding: 0 85px;
+    //overflow: hidden;
+    @media (max-width: 992px){
+      padding: 0;
+    }
+  }
+
+  &__bg-img{
+    position: absolute;
+    z-index: -10;
+    overflow: hidden;
+  }
+
+  &__nav{
+    display: flex;
+    margin: 50px 0 70px;
+    justify-content: center;
+    flex-direction: row
+  }
+
+  &__nav-item{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: $mainColor;
+    text-transform: uppercase;
+    letter-spacing: 0.75;
+
+    transition: 0.3s all;
+  }
+  &__nav-item::after{
+    content: '';
+    position: absolute;
+    left: 20%;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    margin-left: 0;
+    background-color: #000;
+    transition: 0.5s all;
+  }
+
+  &__nav-item:hover::after,
+  &__nav-item.active::after{
+    width: 60%;
+    transition: 1s all;
+  }
+
+  &__nav-item:hover,
+  &__nav-item.active{
+    color: #222;
+  }
+
+  // &__nav-item:first-child::after{
+  //   position: absolute;
+  //   top: 50%;
+  //   content: "•";
+  //   display: inline-block;
+  //   margin: 0 17px;
+  //   margin-top: -7px;
+  // }
+
+  // &__nav-item:last-child::before{
+  //   position: absolute;
+  //   top: 50%;
+  //   content: "•";
+  //   display: inline-block;
+  //   margin: 0 -22px;
+  //   margin-top: -7px;
+  // }
+
+  &__item{
+    display: none;
+  }
+
+  &__item-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 992px){
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+
+
+  &__item-title{
+    margin-right: -300px;
+    z-index: 2;
+
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 60px;
+    color: $mainColor;
+    text-transform: uppercase;
+    letter-spacing: 0.75;
+    @media (max-width: 992px){
+      margin-right: 0;
+      text-align: center;
+    }
+  }
+
+  &__wrap-img{
+    position: relative;
+    margin: 15px;
+    box-shadow: 0 0 29px rgba(0,0,0,0.3);
+    border-radius: 9px;
+    //overflow: hidden;
+  }
+  &__wrap-img::after{
+    content: "";
+    position: absolute;
+    display: block;
+    top: -15px;
+    right: -15px;
+    bottom: 15px;
+    z-index: -10;
+
+    width: 75%;
+    height: 100%;
+
+    background-color: black;
+    background: linear-gradient( to left, #EFA827 0%, #E6D33B 100%);
+    box-shadow: 0 0 29px rgba(0,0,0,0.3);
+    border-radius: 9px;
+  }
+
+  &__img{
+    display: block;
+    border-radius: 9px;
+  }
+
+  &__wrap-text{
+    //padding-right: 80px;
+  }
+  
+  &__text-title{
+    margin-top: 50px;
+
+    font-family: 'SourceSansPro', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: $lightColor;
+    letter-spacing: 0.50;
+    text-transform: uppercase;
+  }
+
+  &__text{
+    margin-top: 20px;
+
+    font-family: 'SourceSansPro', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: $textColor;
+    text-align: left;
+    line-height: 1.5;
+    @media (max-width: 992px){
+      text-align: justify;
+    }
+  }
+}
+
+.bg-img-yogurt,
+.about-company-tabs::before
+{
+  content: '';
+  position: absolute;
+  z-index: -10;
+  top: 24px;
+  left: 30px;
+  width: 16%;
+  height: calc(14vw);
+  background: url(img/about-company__bg-img-1.png) center center no-repeat;
+  background-size: cover;
+  @media (max-width: 992px){
+    display: none;
+  }
+}
+
+.bg-img-bank,
+.about-company-tabs::after{
+  content: '';
+  position: absolute;
+  z-index: -10;
+  top:650px;
+  right: -45px;
+  width: 480px;
+  width: 27%;
+  height: calc(40vw);
+  background: url(img/about-company__bg-img-2.png) center center no-repeat;
+  background-size: cover;
+  @media (max-width: 992px){
+    display: none;
+  }
+}
+
+.active-item{
+  display: block;
+}
+
+.delimeter-dot{
+  display: inline-block;
+  padding: 11px 0 9px;
+  color: $mainColor;
+}
