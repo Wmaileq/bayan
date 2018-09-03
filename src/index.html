@@ -1,103 +1,150 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./bootstrap-grid.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="./bundle.css">
-    <title>Bayan</title>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./bootstrap-grid.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="./bundle.css">
+  <title>Bayan</title>
 </head>
 <body>
-    <section class="main">
-        <div class="container">
-            <div class="top-menu main__menu">
-                <div class="top-menu__burger-icon"></div>
-                <div class="top-menu__logo-wrapper">
-                    <a href="#" class="top-menu__logo"><img src="img/logo.png" alt="Bayan logo"></a>
-                    <div class="top-menu__langs">
-                        <a href="#" class="top-menu__lang">РУС</a>
-                        <a href="#" class="top-menu__lang">КАЗ</a>
-                        <a href="#" class="top-menu__lang">ENG</a>
-                    </div>
-                </div>
-                <ul class="top-menu__nav">
-                    <li class="top-menu__nav-item"><a href="#">О компании</a></li>
-                    <li class="top-menu__nav-item"><a href="#">Продукция</a></li>
-                    <li class="top-menu__nav-item"><a href="#">Дилерам</a></li>
-                    <li class="top-menu__nav-item"><a href="#">Контакты</a></li>
-                </ul>
-                <div class="top-menu__phone-wrapper">
-                    <div class="top-menu__phone">+7 (777) 000-00-00</div>
-                    <a href="#" class="top-menu__callback">Заказать звонок</a>
-                </div>
-            </div>
+  <section class="main">
+  <div class="container">
+      <div class="top-menu main__menu">
+          <div class="top-menu__burger-icon"></div>
+          <div class="top-menu__logo-wrapper">
+              <a href="#" class="top-menu__logo"><img src="img/logo.png" alt="Bayan logo"></a>
+              <div class="top-menu__langs">
+                  <a href="#" class="top-menu__lang">РУС</a>
+                  <a href="#" class="top-menu__lang">КАЗ</a>
+                  <a href="#" class="top-menu__lang">ENG</a>
+              </div>
+          </div>
+          <ul class="top-menu__nav">
+              <li class="top-menu__nav-item"><a href="#">О компании</a></li>
+              <li class="top-menu__nav-item"><a href="#">Продукция</a></li>
+              <li class="top-menu__nav-item"><a href="#">Дилерам</a></li>
+              <li class="top-menu__nav-item"><a href="#">Контакты</a></li>
+          </ul>
+          <div class="top-menu__phone-wrapper">
+              <div class="top-menu__phone">+7 (777) 000-00-00</div>
+              <a href="#" class="top-menu__callback">Заказать звонок</a>
+          </div>
+      </div>
 
-            <div class="main__wrapper">
-                <h1 class="main__heading">Йогуртные продукты</h1>
-                <p class="main__text">Йогуртный продукт термизированный с ароматами абрикоса, клубники, вишни и со сливками.</p>
-                <div class="main__button-wrapper">
-                    <button class="main__button button">Открыть каталог</button>
-                    <div class="main__hint">Стань дилером по продажам</div>
-                </div>
-            </div>
+      <div class="main__wrapper">
+          <h1 class="main__heading">Йогуртные продукты</h1>
+          <p class="main__text">Йогуртный продукт термизированный с ароматами абрикоса, клубники, вишни и со сливками.</p>
+          <div class="main__button-wrapper">
+              <button class="main__button button">Открыть каталог</button>
+              <div class="main__hint">Стань дилером по продажам</div>
+          </div>
+      </div>
 
-            <div class="main__video">
-                <button class="main__watch"></button>
-                <div class="main__watch-text">Смотреть видео-презентацию компании</div>
+      <div class="main__video">
+          <button class="main__watch"></button>
+          <div class="main__watch-text">Смотреть видео-презентацию компании</div>
+      </div>
+  </div>
+  </section>
+
+  <section class="product-tabs">
+    <div class="container">
+      <h2 class="product-tabs__heading">Наша продукция</h2>
+      <div class="product-tabs__buttons-wrapper">
+          <div class="product-tabs__button button button_outfilled">Йогуртная продукция</div>
+          <div class="product-tabs__button button button_outfilled">Лимонады</div>
+          <div class="product-tabs__button button button_outfilled">Квас</div>
+          <div class="product-tabs__button button button_outfilled">Нектары и соки</div>
+          <div class="product-tabs__button button button_outfilled active">Все категории</div>
+      </div>
+      <div class="product-tabs__content">
+          <div class="product-tabs__product">
+              <div class="product-tabs__product-img-wrapper">
+                <img class="product-tabs__product-img" src="img/product-img.png" alt="Product description">
+              </div>
+              <div class="product-tabs__product-text"></div>
+              <div class="product-tabs__product-button"></div>
+          </div>
+          <div class="product-tabs__product">
+              <div class="product-tabs__product-img-wrapper">
+                <img class="product-tabs__product-img" src="img/product-img.png" alt="Product description">
+              </div>
+              <div class="product-tabs__product-text"></div>
+              <div class="product-tabs__product-button"></div>
+          </div>
+          <div class="product-tabs__product">
+              <div class="product-tabs__product-img-wrapper">
+                <img class="product-tabs__product-img" src="img/product-img.png" alt="Product description">
+              </div>
+              <div class="product-tabs__product-text"></div>
+              <div class="product-tabs__product-button"></div>
+          </div>
+          <div class="product-tabs__product">
+              <div class="product-tabs__product-img-wrapper">
+                <img class="product-tabs__product-img" src="img/product-img.png" alt="Product description">
+              </div>
+              <div class="product-tabs__product-text"></div>
+              <div class="product-tabs__product-button"></div>
+          </div>
+          <div class="product-tabs__product">
+              <div class="product-tabs__product-img-wrapper">
+                <img class="product-tabs__product-img" src="img/product-img.png" alt="Product description">
+              </div>
+              <div class="product-tabs__product-text"></div>
+              <div class="product-tabs__product-button"></div>
+          </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+      <div class="container">
+        <div class="footer__wrap">
+          <div class="footer__info-col">
+            <div class="footer__brand">
+              <a href="#" class="footer__logo">
+                <img src="img/logo.png" alt="Bayan logo">
+              </a>
+              <div class="footer__brand-name">
+                <h4 class="footer__brand-title">ТОО Компания Bayan</h4>
+                <p class="footer__brand-tagline">Производство и реализация молочной продукции</p>
+              </div>
             </div>
+            <div class="footer__address">100600, г. Жезказган Карагандинской области, Пятый район, ул. 8 Марта, 1</div>
+            <div class="footer__tels">+7(7102)77-33-60, +7(7102)77-33-61, +7(7102)77-33-62</div>
+            <div class="footer__email">bayan.zhez@mail.ru</div>
+          </div>
+          <div class="footer__nav-col">
+            <ul class="footer__nav-wrap">
+              <li class="footer__nav-item">Главная</li>
+              <li class="footer__nav-item">О компании</li>
+              <li class="footer__nav-item">Производство</li>
+              <li class="footer__nav-item">Новости</li>
+              <li class="footer__nav-item">Продукция</li>
+              <li class="footer__nav-item">Диллерам</li>
+              <li class="footer__nav-item">Промо-акции</li>
+              <li class="footer__nav-item">СМИ о нас</li>
+              <li class="footer__nav-item">Отзывы</li>
+              <li class="footer__nav-item">Наши проекты</li>
+              <li class="footer__nav-item">Команды</li>
+              <li class="footer__nav-item">История компании</li>
+              <li class="footer__nav-item">Новости</li>
+              <li class="footer__nav-item">Анонсы</li>
+              <li class="footer__nav-item">Контакты</li>
+            </ul>
+          </div>
+          <div class="footer__form-col">
+            <form action="">
+              <h4 class="footer__form-title">Узнай первым о нашим новостях и акциях</h4>
+              <label class="footer__form-laber" for="email">Ваш e-mail</label>
+              <input class="footer__form-input" name="email"type="text">
+              <button class="footer__form-btn">Подписаться</button>
+            </form>
+          </div>
         </div>
-    </section>
-
-    <section class="product-tabs">
-        <div class="container">
-            <h2 class="product-tabs__heading">Наша продукция</h2>
-            <div class="product-tabs__buttons-wrapper">
-                <div class="product-tabs__button button button_outfilled">Йогуртная продукция</div>
-                <div class="product-tabs__button button button_outfilled">Лимонады</div>
-                <div class="product-tabs__button button button_outfilled">Квас</div>
-                <div class="product-tabs__button button button_outfilled">Нектары и соки</div>
-                <div class="product-tabs__button button button_outfilled active">Все категории</div>
-            </div>
-            <div class="product-tabs__content">
-                <div class="product-tabs__product">
-                    <div class="product-tabs__product-img-wrapper">
-                        <img class="product-tabs__product-img" src="img/product-img.png" alt="Product description">
-                    </div>
-                    <div class="product-tabs__product-text"></div>
-                    <div class="product-tabs__product-button"></div>
-                </div>
-                <div class="product-tabs__product">
-                    <div class="product-tabs__product-img-wrapper">
-                        <img class="product-tabs__product-img" src="img/product-img.png" alt="Product description">
-                    </div>
-                    <div class="product-tabs__product-text"></div>
-                    <div class="product-tabs__product-button"></div>
-                </div>
-                <div class="product-tabs__product">
-                    <div class="product-tabs__product-img-wrapper">
-                        <img class="product-tabs__product-img" src="img/product-img.png" alt="Product description">
-                    </div>
-                    <div class="product-tabs__product-text"></div>
-                    <div class="product-tabs__product-button"></div>
-                </div>
-                <div class="product-tabs__product">
-                    <div class="product-tabs__product-img-wrapper">
-                        <img class="product-tabs__product-img" src="img/product-img.png" alt="Product description">
-                    </div>
-                    <div class="product-tabs__product-text"></div>
-                    <div class="product-tabs__product-button"></div>
-                </div>
-                <div class="product-tabs__product">
-                    <div class="product-tabs__product-img-wrapper">
-                        <img class="product-tabs__product-img" src="img/product-img.png" alt="Product description">
-                    </div>
-                    <div class="product-tabs__product-text"></div>
-                    <div class="product-tabs__product-button"></div>
-                </div>
-            </div>
-        </div>
-    </section>
+      </div>
+  </footer>
 </body>
 </html>
