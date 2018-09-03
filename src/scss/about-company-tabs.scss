@@ -3,10 +3,11 @@ $lightColor: #9a9a9a;
 $textColor: #5e4b28;
 
 .about-company-tabs{
+  overflow: hidden;
   &__wrap{
     position: relative;
-    padding: 0 172px;
-    overflow: hidden;
+    padding: 0 85px;
+    //overflow: hidden;
   }
 
   &__bg-img{
@@ -66,12 +67,12 @@ $textColor: #5e4b28;
 
   &__item-header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
 
   &__item-title{
-    margin-right: -120px;
+    margin-right: -150px;
     z-index: 2;
 
     font-family: 'Gotham Pro', sans-serif;
@@ -113,7 +114,7 @@ $textColor: #5e4b28;
   }
 
   &__wrap-text{
-    padding-right: 80px;
+    //padding-right: 80px;
   }
   
   &__text-title{
@@ -140,17 +141,14 @@ $textColor: #5e4b28;
 }
 
 .bg-img-yogurt{
-  top: 50px;
-  left: -61px;
+  top: 24px;
+  left: -153px;
 }
 
 .bg-img-bank{
-  bottom: 100px;
-  right: -93px;
+  top: 580px;
+  right: -260px;
   width: 480px;
-  &__point{
-    
-  }
 }
 
 .active-item{
