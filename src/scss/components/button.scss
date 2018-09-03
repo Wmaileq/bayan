@@ -8,6 +8,7 @@
   cursor: pointer;
   transition: box-shadow 0.15s;
   &_outfilled {
+
     background: transparent;
     border: 1px solid #e7a029;
     transition: background-color 0.2s;
@@ -19,4 +20,5 @@
   &:hover {
     box-shadow: 0 0 24px 7px rgba(#ceb631, 0.3);
   }
+
 }

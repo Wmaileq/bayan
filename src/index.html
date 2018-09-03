@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="./bundle.css">
     <title>Bayan</title>
 </head>
@@ -108,8 +109,8 @@
         <div class="main-offer__container">
           <div class="main-offer__heading">Стань представителем самого инновационого завода в Казахстане</div>
           <div class="main-offer__title">Оставь заявку и узнай о условиях диллерства в твоём районе</div>  
-          <div class="main__button-wrapper main-offer__button"> 
-            <button class="main__button button ">Оставить заяку</button>
+          <div class="main__button-wrapper main-offer__btn-wrap"> 
+            <button class="button main-offer__btn">Оставить заяку</button>
             <a href="#" class="main__hint">Узнать больше о заводе</a>
           </div>
         </div>
@@ -122,7 +123,7 @@
 
 <section class="video-card">
     <div class="container">
-        <h2 class="product-tabs__heading">Производcтво продукции</h2>
+        <h2 class="video-card__heading">Производcтво продукции</h2>
     
         <div class="video-card__wrapper">
             <div class="video-card__text">
@@ -131,13 +132,13 @@
             </div>
 
             <div class="production-img video-card__production-video">
-                <div class="production-img__box"></div>
-                <img class="production-img__img" src="img/video-cardImg.jpg" alt="">
-                <div class="production-img__play">
-                    <div class="production-img__circul">
-                        <div class="production-img__treug"></div>
+                <div class="production-img__box video-card__box"></div>
+                <img class="production-img__img video-card__img" src="img/video-cardImg.jpg" alt="">
+                <div class="video-card__play">
+                    <div class="video-card__circul">
+                        <div class="video-card__treug"></div>
                     </div>
-                    <div class="production-img__text">Процесс</br> производства</div>
+                    <div class="video-card__vid-text">Процесс</br> производства</div>
                 </div>
             </div>
 
@@ -178,17 +179,15 @@
 
 <section class="quote">
     <div class="container">
-        <h2 class="product-tabs__heading">“Здесь будет цитата обращения первого</br>
-лица компании из блока ниже”</h2>
-        <div class="quote__container">
+        <h2 class="product-tabs__heading">“Здесь будет цитата обращения первого</br>лица компании из блока ниже”</h2>
+        <div class="quote__container d-flex justify-content-center">
             <div class="production-img quote__img-cont">
-                <div class="production-img__box production-img__box_left"></div>
+                <div class="production-img__box production-img__box_left quote__box"></div>
                 <img class="production-img__img quote__img" src="img/quoteImg.jpg" alt="">
                 <div class="quote__director">
                     <div class="quote__name">Исакова Анастасия</div>
                     <div class="quote__post">Генеральный директор</div>
                 </div>
-
             </div>
             <div class="quote__description">
                 <div class="quote__abzac">
@@ -199,12 +198,88 @@
                     <h3 class="quote__heading">— Заголовок абзаца</h3>
                     <div class="quote__text">Разнообразный и богатый опыт начало повседневной работы по формированию позиции способствует подготовки и реализации систем массового участия. Идейные соображения высшего порядка, а также консультация с широким активом представляет собой </div>
                 </div>
-                <button class="main__button button">О компании</button>
+                <button class="button quote__button">О компании</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="info">
+    <div class="container d-flex justify-content-center">
+        <div class="news">
+            <div class="news__head">
+                <div class="news__text">Новости</div>
+                <button href="#" class="button_outfilled news__button">Архив новостей</button> 
+            </div>
+            <div class="news-card news__card">
+                <div class="news-card__top">
+                    <div class="news-card__heading">
+                        Заголовок новости
+                    </div>
+                    <div class="news-card__date">
+                        <i class="far fa-calendar-alt"></i>
+                        26.06.2018
+                    </div>
+                </div>
+                <div class="news-card__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  
+                </div>
+                <div class="news-card__bottom">
+                    <a href="#" class="news-card__full-news">
+                        <i class="fas fa-angle-down"></i>
+                        Читать полностью
+                    </a> 
+                    <div class="news-card__view">
+                        <i class="fas fa-eye"></i>
+                        361
+                    </div>   
+                </div>
+            </div>
+            <div class="news-card news-card_double">
+                <div class="news-card__top">
+                    <div class="news-card__heading news-card__heading_double">
+                        Заголовок новости
+                    </div>
+                    <div class="news-card__date news-card__date_double">
+                        <i class="far fa-calendar-alt"></i>
+                        26.06.2018
+                    </div>
+                </div>
+                <div class="news-card__text ">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+                <div class="news-card__bottom news-card__bottom_double">
+                    <a href="#" class="news-card__full-news news-card__full-news_double">
+                          <i class="fas fa-angle-down"></i>
+                        Читать полностью
+                    </a> 
+                    <div class="news-card__view">
+                        <i class="fas fa-eye"></i>
+                        361
+                    </div>   
+                </div>
             </div>
         </div>
 
+        <div class="akcia">
+             <div class="akcia__head">
+                <div class="akcia__text">Акции</div>
+                <button href="#" class="button_outfilled akcia__button">Все акции</button> 
+            </div>
+            <div class="akcia__card">
+                <img class="akcia__jpg" src="img/akcia1.jpg" alt="">
+
+
+            </div>
+            <div class="akcia__card">
+               <img class="akcia__jpg" src="img/akcia2.jpg" alt="">
+            </div>
+
+
+        </div>
     </div>
-    
 </section>
 
 
