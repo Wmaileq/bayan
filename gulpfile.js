@@ -24,7 +24,6 @@ const path = {
     src: {
         html: 'src/*.html',
         scss: 'src/scss/**/*.scss',
-        // sass: 'src/scss/**/*.sass',
         styles: 'src/scss/**/*.*',
         js: 'src/js/',
         img: 'src/img/**/*.*',

@@ -8,6 +8,9 @@ $textColor: #5e4b28;
     position: relative;
     padding: 0 85px;
     //overflow: hidden;
+    @media (max-width: 992px){
+      padding: 0;
+    }
   }
 
   &__bg-img{
@@ -36,6 +39,23 @@ $textColor: #5e4b28;
     letter-spacing: 0.75;
 
     transition: 0.3s all;
+  }
+  &__nav-item::after{
+    content: '';
+    position: absolute;
+    left: 20%;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    margin-left: 0;
+    background-color: #000;
+    transition: 0.5s all;
+  }
+
+  &__nav-item:hover::after,
+  &__nav-item.active::after{
+    width: 60%;
+    transition: 1s all;
   }
 
   &__nav-item:hover,
@@ -69,7 +89,12 @@ $textColor: #5e4b28;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 992px){
+      justify-content: center;
+      flex-direction: column;
+    }
   }
+
 
   &__item-title{
     margin-right: -300px;
@@ -80,12 +105,15 @@ $textColor: #5e4b28;
     color: $mainColor;
     text-transform: uppercase;
     letter-spacing: 0.75;
+    @media (max-width: 992px){
+      margin-right: 0;
+      text-align: center;
+    }
   }
 
   &__wrap-img{
     position: relative;
-    margin-top: 15px;
-    margin-left: 15px;
+    margin: 15px;
     box-shadow: 0 0 29px rgba(0,0,0,0.3);
     border-radius: 9px;
     //overflow: hidden;
@@ -137,6 +165,9 @@ $textColor: #5e4b28;
     color: $textColor;
     text-align: left;
     line-height: 1.5;
+    @media (max-width: 992px){
+      text-align: justify;
+    }
   }
 }
 
@@ -152,6 +183,9 @@ $textColor: #5e4b28;
   height: calc(14vw);
   background: url(img/about-company__bg-img-1.png) center center no-repeat;
   background-size: cover;
+  @media (max-width: 992px){
+    display: none;
+  }
 }
 
 .bg-img-bank,
@@ -159,13 +193,16 @@ $textColor: #5e4b28;
   content: '';
   position: absolute;
   z-index: -10;
-  top: 580px;
-  right: 45px;
+  top:650px;
+  right: -45px;
   width: 480px;
-  width: 20%;
-  height: calc(30vw);
+  width: 27%;
+  height: calc(40vw);
   background: url(img/about-company__bg-img-2.png) center center no-repeat;
   background-size: cover;
+  @media (max-width: 992px){
+    display: none;
+  }
 }
 
 .active-item{
