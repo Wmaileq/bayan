@@ -1,22 +1,22 @@
-//  .production-img
+//  .media
 
 
 /* 
 html элемента
 
-<div class="production-img ">
-    <div class="production-img__box "></div>
-    <img class="production-img__img " src="img/video-cardImg.jpg" alt="">
+<div class="media ">
+    <div class="media__box "></div>
+    <img class="media__img " src="img/video-cardImg.jpg" alt="">
 </div>
 */
 
 
 
-//нужно передать ширину и высоту картинки в &__production-img
+//нужно передать ширину и высоту картинки в .media
 //передать ширину и высоту квадрата в &__box
 //прозрачность в  &__img{
 
- .production-img{
+ .media{
 	border-radius:10px;
 	box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.13);
 	background-color: #3a3121;
