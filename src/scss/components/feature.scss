@@ -1,0 +1,19 @@
+.feature{
+	display: flex;
+	justify-content: space-around;
+	&__item{
+			width: 178px;
+			&_center{
+				display: flex;
+				justify-content: center;
+			}
+	}
+	&__icon{
+		margin-bottom: 30px;
+	}
+	&__text{
+		font-size:18px;
+		color:#5e4b28;
+	}
+
+}

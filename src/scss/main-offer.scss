@@ -1,0 +1,110 @@
+.main-offer{
+	position:relative;
+	margin-top: 164px;
+	margin-bottom: 70px;
+	color:white;
+
+	// Бекграунд секции
+	&:after{
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		z-index:-1;
+		background: url("img/bgMain-offer.png") no-repeat center center; 
+
+		height: 850px;
+		background-size: cover;
+	}
+
+	&__img-wrap{
+		position: absolute;
+
+		// круг у бутылок вверху
+		&:after{		          
+			content: '';	
+			background: url("img/Main-offerHelp.png") no-repeat right top; 
+			top: 26px;
+			position: absolute;
+			right: 156px;
+			height: 55px;
+			width: 55px;
+		}
+		// надпись у круга
+		&:before{background: url("img/bgMain-offer.png") no-repeat left top;
+			position: absolute;
+			background: url("img/main-offerHelpLine.png") no-repeat left top; 
+			content: 'Товарный ряд  молочной продукции';
+			padding-left: 60px;
+			background-position:-5px 5px;
+			color:#e7a32b;
+			top: 48px;
+			right: -110px;
+			font-size:14px;
+			width: 290px;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+	}
+}
+
+	// бутылочки слева секции
+	&__img{          
+		width: 533px;
+		height: 424px;           
+		position: relative;
+	}
+
+
+
+	&__container{
+
+		margin-left: 457px;
+
+	}
+
+	// Заголовок
+	&__heading{
+		padding-top: 132px;
+		font-size:30px;
+		font-family: 'Gotham Pro', sans-serif;
+		font-weight:900;
+		padding-bottom: 42px;
+	}
+
+	// Подзаголовок
+	&__title{
+		padding-bottom: 52px;
+		font-size:20px;
+		font-weight:400;
+		font-family: 'Source Sans Pro', sans-serif;
+	}
+
+	//отступ от кнопки для bg
+	&__btn-wrap{
+		padding-bottom: 90px;  
+	}
+
+	&__btn{
+		width: 217px;
+		height: 52px;
+		border-radius:26px;
+		color:white;
+		font-size:18px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

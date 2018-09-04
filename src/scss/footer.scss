@@ -5,26 +5,43 @@ $footerTextColAdd: #716F6D;
 
 .footer{
   width: 100%;
-  height: 278px;
+  // height: 278px;
   background-color: $footerColor;
 
   font-family: 'SourceSansPro', sans-serif;
   color: $footerTextCol;
+  // @media (max-width: 992px) {
+  //   height: 
+  // }
   &__wrap{
     padding-top: 25px;
     display: flex;
     justify-content: space-between;
+    @media (max-width: 992px) {
+      flex-wrap: wrap;
+    }
   }
+
+
   &__info-col{
     width: 30%;
     margin-bottom: -30px;
     // margin-right: 8%;
+    @media (max-width: 992px) {
+      order: 2;
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+      margin-bottom: 40px;
+    }
   }
   &__logo-wrap{
     display: flex;
     margin-bottom: 25px;
     justify-content: flex-start;
-
+    @media (max-width: 768px) {
+      justify-content: center;
+    }
   }
   &__logo{
 
@@ -58,15 +75,25 @@ $footerTextColAdd: #716F6D;
     color: $footerTextColAdd;
     line-height: 1.2;
     white-space: nowrap;
+    @media (max-width: 768px) {
+      text-align: center;
+    }
   }
+
 
   &__nav-col{
     width: 30%;
+    height: 200px;
+    @media (max-width: 992px) {
+      order: 1;
+      width: 100%;
+      margin-bottom: 40px;
+    }
   }
 
   &__nav-wrap{
     display: flex;
-    height: calc(100% / 1 - 100px);
+    height: 100%;
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -89,7 +116,18 @@ $footerTextColAdd: #716F6D;
   &__nav-item:hover{
     color: #e4Ad2c;
   }
+
+
   &__form-col{
+    display: flex;
+    @media (max-width: 992px) {
+      order: 3;
+    }
+    @media (max-width: 768px) {
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 40px;
+    }
   }
   &__form{
     width: 288px;
