@@ -4,100 +4,287 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./bootstrap-grid.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="./bundle.css">
     <title>Bayan</title>
 </head>
 <body>
-    <section class="main">
-        <div class="container">
-            <div class="top-menu main__menu">
-                <div class="top-menu__burger-icon"></div>
-                <div class="top-menu__logo-wrapper">
-                    <a href="#" class="top-menu__logo"><img src="img/logo.png" alt="Bayan logo"></a>
-                    <div class="top-menu__langs">
-                        <a href="#" class="top-menu__lang">РУС</a>
-                        <a href="#" class="top-menu__lang">КАЗ</a>
-                        <a href="#" class="top-menu__lang">ENG</a>
-                    </div>
-                </div>
-                <ul class="top-menu__nav">
-                    <li class="top-menu__nav-item"><a href="#">О компании</a></li>
-                    <li class="top-menu__nav-item"><a href="#">Продукция</a></li>
-                    <li class="top-menu__nav-item"><a href="#">Дилерам</a></li>
-                    <li class="top-menu__nav-item"><a href="#">Контакты</a></li>
-                </ul>
-                <div class="top-menu__phone-wrapper">
-                    <div class="top-menu__phone">+7 (777) 000-00-00</div>
-                    <a href="#" class="top-menu__callback">Заказать звонок</a>
+<section class="main">
+    <div class="container">
+        <div class="top-menu main__menu">
+            <div class="top-menu__burger-icon"></div>
+            <div class="top-menu__logo-wrapper">
+                <a href="#" class="top-menu__logo"><img src="img/logo.png" alt="Bayan logo"></a>
+                <div class="top-menu__langs">
+                    <a href="#" class="top-menu__lang">РУС</a>
+                    <a href="#" class="top-menu__lang">КАЗ</a>
+                    <a href="#" class="top-menu__lang">ENG</a>
                 </div>
             </div>
-
-            <div class="main__wrapper">
-                <h1 class="main__heading">Йогуртные продукты</h1>
-                <p class="main__text">Йогуртный продукт термизированный с ароматами абрикоса, клубники, вишни и со сливками.</p>
-                <div class="main__button-wrapper">
-                    <button class="main__button button">Открыть каталог</button>
-                    <div class="main__hint">Стань дилером по продажам</div>
-                </div>
-            </div>
-
-            <div class="main__video">
-                <button class="main__watch"></button>
-                <div class="main__watch-text">Смотреть видео-презентацию компании</div>
+            <ul class="top-menu__nav">
+                <li class="top-menu__nav-item"><a href="#">О компании</a></li>
+                <li class="top-menu__nav-item"><a href="#">Продукция</a></li>
+                <li class="top-menu__nav-item"><a href="#">Дилерам</a></li>
+                <li class="top-menu__nav-item"><a href="#">Контакты</a></li>
+            </ul>
+            <div class="top-menu__phone-wrapper">
+                <div class="top-menu__phone">+7 (777) 000-00-00</div>
+                <a href="#" class="top-menu__callback">Заказать звонок</a>
             </div>
         </div>
-    </section>
 
-    <section class="product-tabs">
-        <div class="container">
-            <h2 class="product-tabs__heading">Наша продукция</h2>
-            <div class="product-tabs__buttons-wrapper">
-                <div class="product-tabs__button button button_outfilled">Йогуртная продукция</div>
-                <div class="product-tabs__button button button_outfilled">Лимонады</div>
-                <div class="product-tabs__button button button_outfilled">Квас</div>
-                <div class="product-tabs__button button button_outfilled">Нектары и соки</div>
-                <div class="product-tabs__button button button_outfilled active">Все категории</div>
+        <div class="main__wrapper">
+            <h1 class="main__heading">Йогуртные продукты</h1>
+            <p class="main__text">Йогуртный продукт термизированный с ароматами абрикоса, клубники, вишни и со сливками.</p>
+            <div class="main__button-wrapper">
+                <button class="main__button button">Открыть каталог</button>
+                <div class="main__hint">Стань дилером по продажам</div>
             </div>
-            <div class="product-tabs__content">
-                <div class="product-tabs__product">
-                    <div class="product-tabs__product-img-wrapper">
-                        <img class="product-tabs__product-img" src="img/product-img.png" alt="Product description">
-                    </div>
-                    <div class="product-tabs__product-text"></div>
-                    <div class="product-tabs__product-button"></div>
+        </div>
+
+        <div class="main__video">
+            <button class="main__watch"></button>
+            <div class="main__watch-text">Смотреть видео-презентацию компании</div>
+        </div>
+    </div>
+</section>
+
+<section class="product-tabs">
+    <div class="container">
+        <h2 class="product-tabs__heading">Наша продукция</h2>
+        <div class="product-tabs__buttons-wrapper">
+            <div class="product-tabs__button button button_outfilled">Йогуртная продукция</div>
+            <div class="product-tabs__button button button_outfilled">Лимонады</div>
+            <div class="product-tabs__button button button_outfilled">Квас</div>
+            <div class="product-tabs__button button button_outfilled">Нектары и соки</div>
+            <div class="product-tabs__button button button_outfilled active">Все категории</div>
+        </div>
+        <div class="product-tabs__content">
+            <div class="product-tabs__product">
+                <div class="product-tabs__product-img-wrapper">
+                    <img class="product-tabs__product-img" src="img/product-img.png" alt="Product description">
                 </div>
-                <div class="product-tabs__product">
-                    <div class="product-tabs__product-img-wrapper">
-                        <img class="product-tabs__product-img" src="img/product-img.png" alt="Product description">
-                    </div>
-                    <div class="product-tabs__product-text"></div>
-                    <div class="product-tabs__product-button"></div>
+                <div class="product-tabs__product-text"></div>
+                <div class="product-tabs__product-button"></div>
+            </div>
+            <div class="product-tabs__product">
+                <div class="product-tabs__product-img-wrapper">
+                    <img class="product-tabs__product-img" src="img/product-img.png" alt="Product description">
                 </div>
-                <div class="product-tabs__product">
-                    <div class="product-tabs__product-img-wrapper">
-                        <img class="product-tabs__product-img" src="img/product-img.png" alt="Product description">
-                    </div>
-                    <div class="product-tabs__product-text"></div>
-                    <div class="product-tabs__product-button"></div>
+                <div class="product-tabs__product-text"></div>
+                <div class="product-tabs__product-button"></div>
+            </div>
+            <div class="product-tabs__product">
+                <div class="product-tabs__product-img-wrapper">
+                    <img class="product-tabs__product-img" src="img/product-img.png" alt="Product description">
                 </div>
-                <div class="product-tabs__product">
-                    <div class="product-tabs__product-img-wrapper">
-                        <img class="product-tabs__product-img" src="img/product-img.png" alt="Product description">
-                    </div>
-                    <div class="product-tabs__product-text"></div>
-                    <div class="product-tabs__product-button"></div>
+                <div class="product-tabs__product-text"></div>
+                <div class="product-tabs__product-button"></div>
+            </div>
+            <div class="product-tabs__product">
+                <div class="product-tabs__product-img-wrapper">
+                    <img class="product-tabs__product-img" src="img/product-img.png" alt="Product description">
                 </div>
-                <div class="product-tabs__product">
-                    <div class="product-tabs__product-img-wrapper">
-                        <img class="product-tabs__product-img" src="img/product-img.png" alt="Product description">
+                <div class="product-tabs__product-text"></div>
+                <div class="product-tabs__product-button"></div>
+            </div>
+            <div class="product-tabs__product">
+                <div class="product-tabs__product-img-wrapper">
+                    <img class="product-tabs__product-img" src="img/product-img.png" alt="Product description">
+                </div>
+                <div class="product-tabs__product-text"></div>
+                <div class="product-tabs__product-button"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="main-offer">
+    <div class="main-offer__img-wrap">
+        <img src="img/Main-offerProducts.png" alt="" class="main-offer__img">
+    </div>
+    <div class="container">
+        <div class="main-offer__container">
+          <div class="main-offer__heading">Стань представителем самого инновационого завода в Казахстане</div>
+          <div class="main-offer__title">Оставь заявку и узнай о условиях диллерства в твоём районе</div>  
+          <div class="main__button-wrapper main-offer__btn-wrap"> 
+            <button class="button main-offer__btn">Оставить заяку</button>
+            <a href="#" class="main__hint">Узнать больше о заводе</a>
+          </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- video-card -->
+
+
+<section class="video-card">
+    <div class="container">
+        <h2 class="video-card__heading">Производcтво продукции</h2>
+    
+        <div class="video-card__wrapper">
+            <div class="video-card__text">
+                <p class="video-card__paragraph">Разнообразный и богатый опыт начало повседневной работы по формированию позиции способствует подготовки и реализации систем массового участия. Идейные соображения высшего порядка, а также консультация с широким активом представляет собой интересный эксперимент проверки модели развития.</p>
+                <p class="video-card__paragraph">Разнообразный и богатый опыт начало повседневной работы по формированию позиции способствует подготовки и реализации систем массового участия. Идейные соображения высшего </p>
+            </div>
+
+            <div class="media video-card__production-video">
+                <div class="media__box video-card__box"></div>
+                <img class="media__img video-card__img" src="img/video-cardImg.jpg" alt="">
+                <div class="video-card__play">
+                    <div class="video-card__circul">
+                        <div class="video-card__treug"></div>
                     </div>
-                    <div class="product-tabs__product-text"></div>
-                    <div class="product-tabs__product-button"></div>
+                    <div class="video-card__vid-text">Процесс</br> производства</div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
+<section class="iconset">
+    <div class="container">
+        <div class="feature">
+            <div class="feature__item">
+                <div class="feature__icon"><img src="img/icosetIcon.png" alt=""></div>
+                <div class="feature__text">Разнообразный и богатый опыт начало повседневной</div>
+            </div>
+            <div class="feature__item">
+                <div class="feature__icon"><img src="img/icosetIcon.png" alt=""></div>
+                <div class="feature__text">Разнообразный и богатый опыт начало повседневной</div>
+            </div>
+            <div class="feature__item">
+                <div class="feature__icon"><img src="img/icosetIcon.png" alt=""></div>
+                <div class="feature__text">Разнообразный и богатый опыт начало повседневной</div>
+            </div>
+            <div class="feature__item">
+                <div class="feature__icon"><img src="img/icosetIcon.png" alt=""></div>
+                <div class="feature__text">Разнообразный и богатый опыт начало повседневной</div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<section class="quote">
+    <div class="container">
+        <h2 class="product-tabs__heading">“Здесь будет цитата обращения первого</br>лица компании из блока ниже”</h2>
+        <div class="quote__container d-flex justify-content-center">
+            <div class="media quote__img-cont">
+                <div class="media__box media__box_left quote__box"></div>
+                <img class="media__img quote__img" src="img/quoteImg.jpg" alt="">
+                <div class="quote__director">
+                    <div class="quote__name">Исакова Анастасия</div>
+                    <div class="quote__post">Генеральный директор</div>
+                </div>
+            </div>
+            <div class="quote__description">
+                <div class="quote__abzac">
+                    <h3 class="quote__heading">— Заголовок абзаца</h3>
+                    <div class="quote__text">Разнообразный и богатый опыт начало повседневной работы по формированию позиции способствует подготовки и реализации систем массового участия. Идейные соображения высшего порядка, а также консультация с широким активом представляет собой </div>
+                </div>
+                <div class="quote__abzac">
+                    <h3 class="quote__heading">— Заголовок абзаца</h3>
+                    <div class="quote__text">Разнообразный и богатый опыт начало повседневной работы по формированию позиции способствует подготовки и реализации систем массового участия. Идейные соображения высшего порядка, а также консультация с широким активом представляет собой </div>
+                </div>
+                <button class="button quote__button">О компании</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="info">
+    <div class="container d-flex justify-content-center">
+        <div class="news">
+            <div class="news__head">
+                <div class="news__text">Новости</div>
+                <button href="#" class="button_outfilled news__button">Архив новостей</button> 
+            </div>
+            <div class="news-card news__card">
+                <div class="news-card__top">
+                    <div class="news-card__heading">
+                        Заголовок новости
+                    </div>
+                    <div class="news-card__date">
+                        <i class="far fa-calendar-alt"></i>
+                        26.06.2018
+                    </div>
+                </div>
+                <div class="news-card__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  
+                </div>
+                <div class="news-card__bottom">
+                    <a href="#" class="news-card__full-news">
+                        <i class="fas fa-angle-down"></i>
+                        Читать полностью
+                    </a> 
+                    <div class="news-card__view">
+                        <i class="fas fa-eye"></i>
+                        361
+                    </div>   
+                </div>
+            </div>
+            <div class="news-card news-card_double">
+                <div class="news-card__top">
+                    <div class="news-card__heading news-card__heading_double">
+                        Заголовок новости
+                    </div>
+                    <div class="news-card__date news-card__date_double">
+                        <i class="far fa-calendar-alt"></i>
+                        26.06.2018
+                    </div>
+                </div>
+                <div class="news-card__text ">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+                <div class="news-card__bottom news-card__bottom_double">
+                    <a href="#" class="news-card__full-news news-card__full-news_double">
+                          <i class="fas fa-angle-down"></i>
+                        Читать полностью
+                    </a> 
+                    <div class="news-card__view">
+                        <i class="fas fa-eye"></i>
+                        361
+                    </div>   
                 </div>
             </div>
         </div>
-    </section>
+
+        <div class="akcia">
+             <div class="akcia__head">
+                <div class="akcia__text">Акции</div>
+                <button href="#" class="button_outfilled akcia__button">Все акции</button> 
+            </div>
+            <div class="akcia__card">
+                <img class="akcia__jpg" src="img/akcia1.jpg" alt="">
+
+
+            </div>
+            <div class="akcia__card">
+               <img class="akcia__jpg" src="img/akcia2.jpg" alt="">
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
 </body>
 </html>
