@@ -1,0 +1,24 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e7a029 linear-gradient(to left, rgba(#ea9f28,0.7), rgba(#d0c844, 0.7));
+  border: 0;
+  box-shadow: 0 0 24px 4px rgba(#ceb631, 0.22);
+  cursor: pointer;
+  transition: box-shadow 0.15s;
+  &_outfilled {
+
+    background: transparent;
+    border: 1px solid #e7a029;
+    transition: background-color 0.2s;
+    &:hover, &.active {
+      color: #fff;
+      background: #e7a029 linear-gradient(to left, rgba(#ea9f28,0.7), rgba(#d0c844, 0.7));
+    }
+  }
+  &:hover {
+    box-shadow: 0 0 24px 7px rgba(#ceb631, 0.3);
+  }
+
+}
