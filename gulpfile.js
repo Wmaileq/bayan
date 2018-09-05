@@ -97,6 +97,8 @@ const build = gulp.series(buildHTML, buildCSS, buildJS, buildImgs, buildFonts);
 function watch() {
   gwatch(path.src.html, buildHTML);
   gwatch(path.src.styles, buildCSS);
+  gwatch(path.src.components, buildCSS);
+  gwatch(path.src.libs, buildCSS);
   gwatch(path.src.js, buildJS);
   gwatch(path.src.img, buildImgs);
   gwatch(path.src.img, buildFonts);

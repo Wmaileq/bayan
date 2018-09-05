@@ -2,13 +2,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 45px;
   background: #e7a029 linear-gradient(to left, rgba(#ea9f28,0.7), rgba(#d0c844, 0.7));
   border: 0;
+  border-radius: 25px;
   box-shadow: 0 0 24px 4px rgba(#ceb631, 0.22);
   cursor: pointer;
-  transition: box-shadow 0.15s;
+  transition: all 0.2s;
   &_outfilled {
-
     background: transparent;
     border: 1px solid #e7a029;
     transition: background-color 0.2s;
@@ -17,8 +20,11 @@
       background: #e7a029 linear-gradient(to left, rgba(#ea9f28,0.7), rgba(#d0c844, 0.7));
     }
   }
+  &_font-white {
+    color: #fff;
+  }
   &:hover {
-    box-shadow: 0 0 24px 7px rgba(#ceb631, 0.3);
+    box-shadow: 0 0 24px 7px rgba(#ceb631, 0.5);
   }
 
 }

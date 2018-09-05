@@ -1,9 +1,8 @@
 .main {
   position: relative;
   padding-top: 35px;
-  background: url('img/main-bg.png') top center no-repeat;
+  background: #f4f4f4 url('img/main-bg.png') top center no-repeat;
   background-size: cover;
-  mix-blend-mode: screen;
   @media (min-width: 1366px) {
     min-height: calc(825px + ((100vw - 1366px)*325/554));
   }
