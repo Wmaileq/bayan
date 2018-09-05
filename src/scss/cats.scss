@@ -1,0 +1,39 @@
+.cats{
+	background: url("img/materialBg.png") no-repeat top center;
+	
+	&__news-reviews{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+	}
+	&__text{
+		margin-left: 55px;
+		width: 667px;
+		margin-bottom: 87px;
+	}
+
+	&__pagination{
+		margin-bottom: 76px;
+	}
+
+	&__card{
+		&:after{
+		background: none;
+		background-color: #e7a029;	
+		}
+		width: 718px;
+		height: auto;
+		margin-bottom: 39px;
+	}
+
+	&__card-text{
+		height: auto ;
+		oveverflow:none;
+		font-size:16px;
+	}	
+
+	&__last-card{
+		margin-bottom: 77px;
+	}
+}

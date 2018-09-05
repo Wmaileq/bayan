@@ -1,11 +1,3 @@
-.material__card{
-	width: 718px;
-	margin-bottom: 39px;
-		padding-left: 38px !important;
-	&:after{
-		display: none;
-	}
-}
 .material{
 	background: url("img/materialBg.png") center center no-repeat;
   background-size: cover;
@@ -18,4 +10,12 @@
 	&__pagination{
 		margin-bottom: 76px;
 	}
+  &__card{
+    width: 718px;
+    margin-bottom: 39px;
+    padding-left: 38px !important;
+    &:after{
+      display: none;
+    }
+  }
 }
