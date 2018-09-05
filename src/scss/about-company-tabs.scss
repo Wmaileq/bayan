@@ -2,13 +2,44 @@ $mainColor: #E6AA30;
 $lightColor: #9a9a9a;
 $textColor: #5e4b28;
 
-.about-company-tabs{
+.about{
   overflow: hidden;
+  
+  &::before{
+    content: '';
+    position: absolute;
+    z-index: -10;
+    top: 24px;
+    left: 30px;
+    width: 16%;
+    height: calc(14vw);
+    background: url(img/about-company__bg-img-1.png) center center no-repeat;
+    background-size: cover;
+    @media (max-width: 992px){
+      display: none;
+    }
+  }
+  &::after{
+    content: '';
+    position: absolute;
+    z-index: -10;
+    top:650px;
+    right: -45px;
+    width: 480px;
+    width: 27%;
+    height: calc(40vw);
+    background: url(img/about-company__bg-img-2.png) center center no-repeat;
+    background-size: cover;
+    @media (max-width: 992px){
+      display: none;
+    }
+  }
+
   &__wrap{
     position: relative;
     padding: 0 85px;
     //overflow: hidden;
-    @media (max-width: 992px){
+    @media (max-width: 991px){
       padding: 0;
     }
   }
@@ -39,31 +70,30 @@ $textColor: #5e4b28;
     letter-spacing: 0.75;
 
     transition: 0.3s all;
-  }
-  &__nav-item::after{
-    content: '';
-    position: absolute;
-    left: 20%;
-    bottom: 0;
-    width: 0;
-    height: 3px;
-    margin-left: 0;
-    background-color: #000;
-    transition: 0.5s all;
-  }
+    &::after{
+      content: '';
+      position: absolute;
+      left: 20%;
+      bottom: 0;
+      width: 0;
+      height: 3px;
+      margin-left: 0;
+      background-color: #000;
+      transition: 0.5s all;
+    }
 
-  &__nav-item:hover::after,
-  &__nav-item.active::after{
-    width: 60%;
-    transition: 1s all;
-  }
+    &:hover::after,
+    &.active::after{
+      width: 60%;
+      transition: 1s all;
+    }
 
-  &__nav-item:hover,
-  &__nav-item.active{
-    color: #222;
+    &:hover,
+    &.active{
+      color: #222;
+    }
   }
-
-  // &__nav-item:first-child::after{
+  // &__nav-item::after{
   //   position: absolute;
   //   top: 50%;
   //   content: "•";
@@ -89,7 +119,7 @@ $textColor: #5e4b28;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media (max-width: 992px){
+    @media (max-width: 991px){
       justify-content: center;
       flex-direction: column;
     }
@@ -105,7 +135,7 @@ $textColor: #5e4b28;
     color: $mainColor;
     text-transform: uppercase;
     letter-spacing: 0.75;
-    @media (max-width: 992px){
+    @media (max-width: 991px){
       margin-right: 0;
       text-align: center;
     }
@@ -148,7 +178,6 @@ $textColor: #5e4b28;
   &__text-title{
     margin-top: 50px;
 
-    font-family: 'SourceSansPro', sans-serif;
     font-size: 18px;
     font-weight: 400;
     color: $lightColor;
@@ -159,51 +188,17 @@ $textColor: #5e4b28;
   &__text{
     margin-top: 20px;
 
-    font-family: 'SourceSansPro', sans-serif;
     font-size: 18px;
     font-weight: 400;
     color: $textColor;
     text-align: left;
     line-height: 1.5;
-    @media (max-width: 992px){
+    @media (max-width: 991px){
       text-align: justify;
     }
   }
 }
 
-.bg-img-yogurt,
-.about-company-tabs::before
-{
-  content: '';
-  position: absolute;
-  z-index: -10;
-  top: 24px;
-  left: 30px;
-  width: 16%;
-  height: calc(14vw);
-  background: url(img/about-company__bg-img-1.png) center center no-repeat;
-  background-size: cover;
-  @media (max-width: 992px){
-    display: none;
-  }
-}
-
-.bg-img-bank,
-.about-company-tabs::after{
-  content: '';
-  position: absolute;
-  z-index: -10;
-  top:650px;
-  right: -45px;
-  width: 480px;
-  width: 27%;
-  height: calc(40vw);
-  background: url(img/about-company__bg-img-2.png) center center no-repeat;
-  background-size: cover;
-  @media (max-width: 992px){
-    display: none;
-  }
-}
 
 .active-item{
   display: block;
