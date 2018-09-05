@@ -1,0 +1,17 @@
+.material{
+	background: url("img/materialBg.png") no-repeat top center;
+	&__card{
+			width: 718px;
+	margin-bottom: 39px ;
+		padding-left: 38px ;
+	&:after{
+		display: none;
+	}
+	}
+	&__last-card{
+		margin-bottom: 77px ;
+	}
+	&__pagination{
+		margin-bottom: 76px;
+	}
+}
