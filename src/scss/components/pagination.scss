@@ -17,6 +17,7 @@
     transform: rotate(-45deg);
     border-width:3px 0 0 3px;
     transition: transform 0.2s;
+    cursor: pointer;
     &:hover{
       transform: scale(1.1) rotate(-45deg);
     }
@@ -34,37 +35,35 @@
     transform: rotate(135deg);
     border-width:3px 0 0 3px;
     transition: transform 0.2s;
+    cursor: pointer;
     &:hover{
       transform: scale(1.1) rotate(135deg);
     }
   }
 
   &__item{
+    position: relative;
+    padding: 5px 15px;
+    color: #e09c2b;
     &:hover:not(.pagination__item_active){
       text-decoration: underline;
     }
-    padding-right: 16px;
-    color: #e09c2b;
-    position: relative;
     &_active{
       color:white;
       font-weight:700;
       position: relative;
-      padding: 0 30px 0 14px;
       &:before{
-        position: absolute;
         content:"";
+        position: absolute;
+        top: calc(50% - 2px);
+        left: 50%;
         z-index:-1;
-        top: -14px;
-        left: -5;
         height: 48px;
         width: 48px;
         border-radius:50%;
         background-color: #e09c2b;
+        transform: translate(-50%, -50%)
       }
     }
-  }
-  &__last{
-    padding-right: 0;
   }
 }

@@ -11,7 +11,8 @@ const gulp = require('gulp'),
   imagemin = require('gulp-imagemin'),
   gwatch = require('gulp-watch'),
   babel = require('gulp-babel'),
-  rimraf    = require('rimraf');
+  rimraf    = require('rimraf'),
+  include = require('gulp-include');
 
 const path = {
   public: {
@@ -43,6 +44,7 @@ const config = {
 
 function buildHTML() {
   return gulp.src(path.src.html)
+    .pipe(include())
     .pipe(htmlmin({
       collapseWhitespace: true,
       conservativeCollapse: true,

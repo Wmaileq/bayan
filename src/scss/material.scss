@@ -7,10 +7,14 @@
 	}
 }
 .material{
-	background: url("img/materialBg.png") no-repeat top center;
-	&__last-card{
-		margin-bottom: 77px;
-	}
+	background: url("img/materialBg.png") center center no-repeat;
+  background-size: cover;
+	&__wrapper {
+    margin-bottom: 77px;
+    div:last-of-type{
+      margin-bottom: 0;
+    }
+  }
 	&__pagination{
 		margin-bottom: 76px;
 	}
