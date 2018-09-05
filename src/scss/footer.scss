@@ -1,0 +1,11 @@
+
+$footerColor: #2f2c26;
+
+.footer{
+  width: 100%;
+  min-height: 278px;
+  background-color: $footerColor;
+  &__wrap{
+    display: flex;
+  }
+}
