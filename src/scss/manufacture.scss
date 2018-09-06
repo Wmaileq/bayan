@@ -1,0 +1,93 @@
+.manufacture{
+	&__top-wrap{
+			background: url("img/materialBg.png") center center no-repeat;
+  background-size: cover;
+  margin-bottom: 90px;
+	}
+	&__heading{
+  font-size: 60px;
+  color: rgb(230, 170, 48);
+  font-weight: 700;
+  line-height: 1.2;
+  position: relative;
+  margin-bottom: 133px;
+  			&:after{
+			 content: "";
+			 position: absolute;
+			 bottom: -24px;
+			 left: 0px;
+			background-color: red;
+			width: 76px;
+			background-color: #e6aa30;
+			height: 7px;
+		}
+	}
+	&__textBlock-wrap{
+display: flex;
+justify-content: space-between;
+	}
+	&__text-item{
+width: 285px;
+display: flex;
+flex-direction:column;
+  &_long{
+width: auto;
+margin-top: 40px;
+  }
+
+	}
+	&__text-heading{
+		margin-bottom: 24px;
+  font-size: 18px;
+  color: rgb(154, 154, 154);
+  text-transform: uppercase;
+  line-height: 1.2;
+
+	}
+	&__text{
+  font-size: 18px;
+  color: rgb(94, 75, 40);
+  line-height: 1.2;
+
+	}
+
+	&__feature{
+		height: 380px;
+		display: flex;
+		align-items:center;
+		// padding-top: 90px;
+		// padding-bottom: 120px;
+		background: #fff url(img/ManufactoreBg.png) 0 0 no-repeat;
+		background-size: 100% 100%;
+	}
+	&__feature-text{
+
+  font-size: 15px;
+  font-family: "Gotham Pro";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+
+
+
+	}
+	&__feature-item{
+		width: 144px;
+		text-align:center;
+	}
+	&__next-tab{
+		margin-top: 100px;
+		margin-bottom: 80px;
+		justify-content: flex-end;
+		display: flex;
+		align-items:flex-end;
+  font-size: 36px;
+  font-family: "Gotham Pro";
+  color: rgb(230, 170, 48);
+  text-transform: uppercase;
+  line-height: 1.2;margin-left: auto;
+	}
+	&__next-text{
+		margin-right: 30px;
+	}
+
+}
