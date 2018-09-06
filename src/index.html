@@ -1,28 +1,10 @@
 <html lang="en">
-//=include head.html
+//=include ./components/head.html
 <body>
 <section class="main">
   <div class="container">
     <div class="top-menu main__menu">
-      <div class="top-menu__burger-icon"></div>
-      <div class="top-menu__logo-wrapper">
-        <a href="#" class="top-menu__logo"><img src="img/logo.png" alt="Bayan logo"></a>
-        <div class="top-menu__langs">
-          <a href="#" class="top-menu__lang">РУС</a>
-          <a href="#" class="top-menu__lang">КАЗ</a>
-          <a href="#" class="top-menu__lang">ENG</a>
-        </div>
-      </div>
-      <ul class="top-menu__nav">
-        <li class="top-menu__nav-item"><a href="#">О компании</a></li>
-        <li class="top-menu__nav-item"><a href="#">Продукция</a></li>
-        <li class="top-menu__nav-item"><a href="#">Дилерам</a></li>
-        <li class="top-menu__nav-item"><a href="#">Контакты</a></li>
-      </ul>
-      <div class="top-menu__phone-wrapper">
-        <a href="tel:+77770000000" class="top-menu__phone">+7 (777) 000-00-00</a>
-        <a href="#" class="top-menu__callback">Заказать звонок</a>
-      </div>
+      //= include ./components/top-menu.html
     </div>
 
     <div class="main__wrapper">
@@ -270,94 +252,7 @@
   </div>
 </section>
 
-<!-- Footer -->
-
-<footer class="footer">
-  <div class="container">
-    <div class="footer__wrap">
-      <div class="footer__info-col">
-        <div class="footer__logo-wrap">
-          <a href="#" class="footer__logo">
-            <img src="img/logo.png" alt="Bayan logo">
-          </a>
-          <div class="footer__logo-name">
-            <h4 class="footer__logo-title">ТОО Компания Bayan</h4>
-            <p class="footer__logo-tagline">Производство и реализация
-              <br>молочной продукции</p>
-          </div>
-        </div>
-        <div class="footer__info-item footer__address">100600, г. Жезказган Карагандинской области,
-          <br>Пятый район, ул. 8 Марта, 1</div>
-        <div class="footer__info-item footer__tels">+7(7102)77-33-60, +7(7102)77-33-61, +7(7102)77-33-62</div>
-        <div class="footer__info-item footer__email">bayan.zhez@mail.ru</div>
-      </div>
-      <div class="footer__nav-col">
-        <ul class="footer__nav-wrap">
-          <li class="footer__nav-item-wrap">
-            <a class="footer__nav-item" href="#">Главная</a>
-          </li>
-          <li class="footer__nav-item-wrap">
-            <a class="footer__nav-item" href="#">О компании</a>
-          </li>
-          <li class="footer__nav-item-wrap">
-            <a class="footer__nav-item" href="#">Производство</a>
-          </li>
-          <li class="footer__nav-item-wrap">
-            <a class="footer__nav-item" href="#">Новости</a>
-          </li>
-          <li class="footer__nav-item-wrap">
-            <a class="footer__nav-item" href="#">Продукция</a>
-          </li>
-          <li class="footer__nav-item-wrap">
-            <a class="footer__nav-item" href="#">Диллерам</a>
-          </li>
-          <li class="footer__nav-item-wrap">
-            <a class="footer__nav-item" href="#">Промо-акции</a>
-          </li>
-          <li class="footer__nav-item-wrap">
-            <a class="footer__nav-item" href="#">СМИ о нас</a>
-          </li>
-          <li class="footer__nav-item-wrap">
-            <a class="footer__nav-item" href="#">Отзывы</a>
-          </li>
-          <li class="footer__nav-item-wrap">
-            <a class="footer__nav-item" href="#">Наши проекты</a>
-          </li>
-          <li class="footer__nav-item-wrap">
-            <a class="footer__nav-item" href="#">Команды</a>
-          </li>
-          <li class="footer__nav-item-wrap">
-            <a class="footer__nav-item" href="#">История компании</a>
-          </li>
-          <li class="footer__nav-item-wrap">
-            <a class="footer__nav-item" href="#">Новости</a>
-          </li>
-          <li class="footer__nav-item-wrap">
-            <a class="footer__nav-item" href="#">Анонсы</a>
-          </li>
-          <li class="footer__nav-item-wrap">
-            <a class="footer__nav-item" href="#">Контакты</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__form-col">
-        <form class="footer__form" action="">
-          <h4 class="footer__form-title">Узнай первым о нашим новостях и акциях</h4>
-          <div class="footer__form-inputgroup">
-            <input class="footer__form-input" name="email" type="text">
-            <label class="footer__form-label" for="email">Ваш e-mail</label>
-          </div>
-          <button class="footer__form-btn">Подписаться</button>
-        </form>
-      </div>
-    </div>
-    <div class="footer__copyright">
-      ТОО Компания Bayan 2018 © Все права защищены
-    </div>
-  </div>
-</footer>
-
-<!-- // Footer -->
+//=include ./components/footer.html
 
 </body>
 </html>
