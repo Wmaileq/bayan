@@ -1,32 +1,66 @@
 //      video-card
 .video-card{
 	margin-bottom: 110px;
-
+	@media (max-width:991px) {
+	margin-bottom: 63px;
+}
 	&__heading{
 		text-align:center;
 		margin-bottom: 90px;
+												@media (max-width:380px) {
+font-size:30px;
+		margin-bottom: 80px;
+
+		}
 	}
 
 	&__wrapper{
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		@media (max-width:991px) {
+			flex-direction:column;
+		}
 	}
 
 	&__text{
 		padding-left: 80px;
 		font-size:18px;
 		color:#5e4b28;
+		@media (max-width:1199px) {
+			padding-left: 0;
+		}
 	}
 
 	&__paragraph{
 		margin-bottom: 40px;
 		width: 550px;
+		@media (max-width:1199px) {
+			width: 500px;
+		}
+		@media (max-width:991px) {
+			width: auto;
+		}
 	}
 
 	&__production-video{
 		height: 337px;
 		width: 408px;
+		@media (max-width:991px) {
+			order:-1;
+			height: 500px;
+			width: auto;
+			margin-bottom: 40px;
+		}
+		@media (max-width:768px) {
+			height: 100%;
+			width: 100%;
+
+		}
+				@media (max-width:488px) {
+			height: 100%;
+
+		}
 	//круг
 		&:after{		          
 			content: '';	
@@ -36,6 +70,9 @@
 			position: absolute;
 			height: 55px;
 			width: 55px;
+			@media (max-width:991px) {
+				display: none;
+			}
 		}
 		// надпись у круга
 		&:before{
@@ -50,6 +87,9 @@
 			width: 290px;
 			display: flex;
 			align-items: center;
+			@media (max-width:991px) {
+				display: none;
+			}
 		}
 	}
 
@@ -59,6 +99,10 @@
 		position: absolute;
 		top: calc(50% - 32px);
 		left: 67px;
+						@media (max-width:380px) {
+left:20px;
+
+		}
 	}
 
 	&__treug{
@@ -87,6 +131,7 @@
 			content:"";
 			background-color: #fff;
 		}
+
 	}
 
 	&__vid-text{
@@ -94,11 +139,29 @@
 		font-weight:900;
 		color:white;
 		padding-left: 73px;
+										@media (max-width:380px) {
+font-size:20px;
+
+		}
 	}
 
 	&__box{
 		width: 253px;
 		height: 209px;
+		@media (max-width:991px) {
+			width: 453px;
+			height: 409px;
+		}
+				@media (max-width:768px) {
+						width: 353px;
+			height: 309px;
+
+		}
+					@media (max-width:488px) {
+						width: 203px;
+			height: 159px;
+
+		}
 	}
 
 	&__img{

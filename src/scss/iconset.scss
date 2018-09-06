@@ -1,5 +1,11 @@
 .iconset{
 	margin-bottom: 106px;
+	@media (max-width:991px) {
+		
+	}
+	&__text{
+		font-size:16px;
+	}
 }
 
 
