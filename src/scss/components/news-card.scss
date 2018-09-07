@@ -1,5 +1,9 @@
 //компонент
 .news-card{
+&__head{
+	margin-left: 175px;
+}
+
 	&:after{
 		content:"";
 		background: url(../img/infoBgN.png) no-repeat center center;
@@ -25,7 +29,7 @@
 	border-radius: 10px;
 	&_double{
 		color:white;
-		background:#ce9028 url(../img/InfoBgDouble.png) no-repeat;
+		background:#e7a029 url(../img/InfoBgDouble.png) no-repeat;
 		// background:  url() 0 0 no-repeat;
 
 		&:after{
