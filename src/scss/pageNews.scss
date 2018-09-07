@@ -1,0 +1,68 @@
+.pageNews{
+				background: url("img/materialBg.png")  top center no-repeat;
+				background-size: 100% 50%;
+&__news-card{
+width: 753px;
+	margin-bottom: 49px;
+	background-position: 441px 0;
+}
+&__news-card-double{
+	background-image: url(img/pageNewacard.jpg);
+}
+
+&__news{
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+}
+&__pagination{
+			display: flex;
+	justify-content: center;
+	margin-bottom: 80px;
+
+
+}
+}
+
+
+.last-anonse{
+	&__item{
+
+	height: 346px;
+	background:url("img/lasanonse1.jpg") center top no-repeat;
+	background-size:100% 100%;
+	&_second{
+		background-image:url("img/lasanonse2.jpg");
+
+
+}
+}
+&__text{
+  font-size: 15px;
+  font-family: "Gotham Pro";
+  font-weight:400;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+		width: 616px;
+
+}
+&__button{
+		height: 45px;
+	width: 214px;	
+	background:none;
+	background-color: #fff;
+	font-size:15px;
+	color:#b67622;
+	margin-top: 35px;
+
+		font-family:'Gotham Pro',sans-serif;
+		font-weight:400;
+		  &:hover {
+    box-shadow: 0 0 24px 7px rgba(#fff, 0.35);
+  }
+}
+
+
+
+
+}
