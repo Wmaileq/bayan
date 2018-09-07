@@ -1,0 +1,26 @@
+	.tabs-head{
+  font-size: 60px;
+  color: rgb(230, 170, 48);
+  font-weight: 700;
+  line-height: 1.2;
+  position: relative;
+  margin-bottom: 120px;		padding-top: 100px;
+  			&:after{
+			 content: "";
+			 position: absolute;
+			 bottom: -24px;
+			 left: 0px;
+			background-color: red;
+			width: 76px;
+			background-color: #e6aa30;	
+
+			height: 7px;
+		}
+
+		&_mbS{
+			margin-bottom: 90px;
+		}
+
+	
+
+	}
