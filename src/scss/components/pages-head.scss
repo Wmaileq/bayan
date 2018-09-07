@@ -1,128 +1,111 @@
 .pages-head{
-		&__breadcrumbs{
-font-size:16px;
-margin-left: 82px;
-		color:white;
+  &__company{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin-top: 175px;
+    font-family:'Gotham Pro',sans-serif;
+    font-size:16px;
+    color:white;
+    text-transform: uppercase;
+  }
 
-	}
+  &__top-title{
+    font-size:12px;
+    position: relative;
+    transform: rotate(-27deg);
+    span{
+      height: 200px;
+      position: absolute;
+      top: -70px;
+      left: -90;
+      width: 15px;
+      transform-origin: bottom center;
+    }
 
-	&__breadcrumbs-item{
-		color:white;
+  }
+  &__char1{
+    transform: rotate(3deg);
+  }
+  &__char2{
+    transform: rotate(6deg);
+  }
+  &__char3{
+    transform: rotate(9deg);
+  }
+  &__char4{
+    transform: rotate(12deg);
+  }
+  &__char5{
+    transform: rotate(15deg);
+  }
+  &__char6{
+    transform: rotate(18deg);
+  }
+  &__char7{
+    transform: rotate(21deg);
+  }
+  &__char8{
+    transform: rotate(24deg);
+  }
+  &__char9{
+    transform: rotate(27deg);
+  }
+  &__char10{
+    transform: rotate(30deg);
+  }
+  &__char11{
+    transform: rotate(33deg);
+  }
+  &__char12{
+    transform: rotate(36deg);
+  }
+  &__char13{
+    transform: rotate(39deg);
+  }
+  &__char14{
+    transform: rotate(42deg);
+  }
+  &__char15{
+    transform: rotate(45deg);
+  }
+  &__char16{
+    transform: rotate(48deg);
+  }
+  &__char17{
+    transform: rotate(51deg);
+  }
+  &__char18{
+    transform: rotate(54deg);
+  }
 
-	}
-	&__company{
-		display: flex;
-		flex-direction:column;
-		align-items: center;
-		margin-top: 175px;
-		font-family:'Gotham Pro',sans-serif;	
-		font-size:16px;
-		color:white;
-		text-transform: uppercase;
+  &__heading{
+    font-size:48px;
+    font-weight:700;
+    position: relative;
+    text-transform: uppercase;
+    &:after{
+      content: "";
+      position: absolute;
+      bottom: -30px;
+      left: calc(50% - 50px);
+      background-color: #fff;
+      width: 100px;
+      height: 2px;
+    }
+  }
 
-	}
-
-
-
-	&__top-title{
-			font-size:12px;
- position: relative;
-  transform: rotate(-27deg);
-		span{
-  height: 200px;
-  position: absolute;
-  top: -70px;
-  left: -90;
-  width: 15px;
-  transform-origin: bottom center;
-		}
-
-	}
-	&__char1{
-transform: rotate(3deg);
-	}
-		&__char2{
-		transform: rotate(6deg);
-	}
-		&__char3{
-		transform: rotate(9deg);
-	}
-		&__char4{
-				transform: rotate(12deg);
-	}
-		&__char5{
-				transform: rotate(15deg);
-	}
-		&__char6{
-				transform: rotate(18deg);
-	}
-		&__char7{
-				transform: rotate(21deg);
-	}
-		&__char8{
-						transform: rotate(24deg);
-	}
-		&__char9{
-								transform: rotate(27deg);
-	}
-		&__char10{
-								transform: rotate(30deg);
-	}
-		&__char11{
-								transform: rotate(33deg);
-	}
-		&__char12{
-								transform: rotate(36deg);
-	}
-		&__char13{
-			transform: rotate(39deg);
-	}
-		&__char14{
-			transform: rotate(42deg);
-	}
-		&__char15{
-			transform: rotate(45deg);
-	}
-		&__char16{
-			transform: rotate(48deg);
-	}
-		&__char17{
-			transform: rotate(51deg);
-	}
-		&__char18{
-			transform: rotate(54deg);
-	}
-
-
-
-
-	&__heading{
-		font-size:48px;
-		font-weight:700;
-		position: relative;
-		&:after{
-			 content: "";
-			 position: absolute;
-			 bottom: -30px;
-			 left: calc(50% - 50px);
-			background-color: #fff;
-			width: 100px;
-			height: 2px;
-		}
-	}
-
-	&__title{
-padding-top: 78px;
-			text-align:center;
-	}
-
+  &__title{
+    padding-top: 78px;
+    text-align:center;
+  }
 }
 
 .fa-angle-right{
-	padding: 0px 10px;
+  padding: 0px 10px;
 
 }
 .fa-arrow-down{
-	padding-top: 22px;
-	font-size:20px;
+  padding-top: 22px;
+  font-size:20px;
 }

@@ -1,134 +1,122 @@
 .produce{
-
-	&__head{
-		background: url("img/produceBg.png") center top no-repeat;
-background-size:100% 100%;
-		background-color: #3b2a0f;
-		height: 668px;
-		overflow:hidden;
-	}
-
-
-
-	&__item{
-		  background: linear-gradient(to right, rgba(46,46,46,0) 0%, rgba(58,49,24,.1) 100%), url(img/produceBgSection.png) bottom left no-repeat; 
-			background-size:100% 100%;
-			height: 344px;
-			color:white;
-
-			
-		&_orange{
-			background-color: #ef831a;
-
-		}
-				&_green{
-					  background: linear-gradient(to right, rgba(46,46,46,0) 0%, rgba(58,49,24,.1) 100%), url(img/produceBgSectionGreen.png) bottom left no-repeat; 
-			background-color: #4f8b33;			
-			background-size: cover;
-			//filter: hue-rotate(90deg);
-		}
-				&_blue{
-					 background: linear-gradient(to right, rgba(46,46,46,0) 0%, rgba(58,49,24,.1) 100%), url(img/produceBgSectionBlue.png) bottom left no-repeat; 
-			background-color: #328079;
-			background-size: cover;
-		}
-				&_violent{
-					 background: linear-gradient(to right, rgba(46,46,46,0) 0%, rgba(58,49,24,.1) 100%), url(img/produceBgSectionPurple.png) bottom left no-repeat; 
-			background-color: #7b2eb1;
-			background-size: cover;
-		}
-
-		&_last{
-			margin-top: 75px;
-			background:none;
-
-		}
-	}
-
-&__img{
-	height: 334px;
-	width: auto;
-	margin-top: 10px;
-	margin-right: 50px;
-}
-&__top-title{
-			font-family:'Gotham Pro',sans-serif;
-			font-size:44px;
-		text-transform: uppercase;
-		margin-top: 37px;
-			letter-spacing: 7px;
-
-
-}
-&__heading{
-	position: relative;
-	font-size:55px;
-		text-transform: uppercase;
-	font-weight:700;
-			letter-spacing: 7px;
-			margin-bottom: 46px;
-			&:after{
-			 content: "";
-			 position: absolute;
-			 bottom: -20px;
-			 left: 3px;
-			background-color: #fff;
-			width: 66px;
-			height: 7px;
-		}
-					&_yellow{
-						margin-top: 10px;
-				color: #e8a729;
-					font-size:33px;
-								letter-spacing: 4px;
-
-			}
-
-}
-
-&__text{
-	font-size:14px;
-				font-family:'Gotham Pro',sans-serif;
-				width: 575px;
-				margin-bottom: 38px;
-				line-height: 1.6;
-				&_black{
-color:#2f2c26;
-				}
-}
-
-&__button{
-	height: 45px;
-	width: 214px;	
-	background:none;
-	background-color: #fff;
-	font-size:15px;
-		font-family:'Gotham Pro',sans-serif;
-		  &:hover {
-    box-shadow: 0 0 24px 7px rgba(#fff, 0.35);
+  &__head{
+    background: #3b2a0f url("img/produceBg.png") 100% 100% no-repeat;
+    height: 668px;
+    overflow:hidden;
   }
-			&_orange{
-			color: #ef831a;
-		}
-				&_green{
 
-			color: #4f8b33;
-		}
-				&_blue{
-			color: #328079;
-		}
-				&_violent{
-			color: #7b2eb1;
-		}
-		&_orngBtn{
-color:white;
-	background-color: #e6aa30;
-			  &:hover {
-     box-shadow: 0 0 24px 7px rgba(#ceb631, 0.75);
+  &__item{
+    background: url(img/produceBgSection.png) bottom left no-repeat;
+    background-size:100% 100%;
+    height: 344px;
+    color:white;
+    &_orange{
+      background-color: #ef831a;
+    }
+    &_green{
+      background: #4f8b33 url(img/produceBgSectionGreen.png) bottom left no-repeat;
+      background-size: cover;
+      //filter: hue-rotate(90deg);
+    }
+    &_blue{
+      background: #328079 url(img/produceBgSectionBlue.png) bottom left no-repeat;
+      background-size: cover;
+    }
+    &_violent{
+      background: #7b2eb1 url(img/produceBgSectionPurple.png) bottom left no-repeat;
+      background-size: cover;
+    }
+
+    &_last{
+      margin-top: 75px;
+      background:none;
+
+    }
   }
-		}
 
-}
+  &__img{
+    height: 334px;
+    width: auto;
+    margin-top: 10px;
+    margin-right: 50px;
+  }
+  &__top-title{
+    font-family:'Gotham Pro',sans-serif;
+    font-size:44px;
+    text-transform: uppercase;
+    margin-top: 37px;
+    letter-spacing: 7px;
+
+
+  }
+  &__heading{
+    position: relative;
+    font-size:55px;
+    text-transform: uppercase;
+    font-weight:700;
+    letter-spacing: 7px;
+    margin-bottom: 46px;
+    &:after{
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      left: 3px;
+      background-color: #fff;
+      width: 66px;
+      height: 7px;
+    }
+    &_yellow{
+      margin-top: 10px;
+      color: #e8a729;
+      font-size:33px;
+      letter-spacing: 4px;
+
+    }
+
+  }
+
+  &__text{
+    font-size:14px;
+    font-family:'Gotham Pro',sans-serif;
+    width: 575px;
+    margin-bottom: 38px;
+    line-height: 1.6;
+    &_black{
+      color:#2f2c26;
+    }
+  }
+
+  &__button{
+    height: 45px;
+    width: 214px;
+    background:#fff;
+    font-size:15px;
+    font-family:'Gotham Pro',sans-serif;
+    &:hover {
+      box-shadow: 0 0 24px 7px rgba(#fff, 0.35);
+    }
+    &_orange{
+      color: #ef831a;
+    }
+    &_green{
+
+      color: #4f8b33;
+    }
+    &_blue{
+      color: #328079;
+    }
+    &_violent{
+      color: #7b2eb1;
+    }
+    &_orngBtn{
+      color:white;
+      background-color: #e6aa30;
+      &:hover {
+        box-shadow: 0 0 24px 7px rgba(#ceb631, 0.75);
+      }
+    }
+
+  }
 
 
 

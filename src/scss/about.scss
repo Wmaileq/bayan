@@ -3,6 +3,7 @@ $lightColor: #9a9a9a;
 $textColor: #5e4b28;
 
 .about{
+  position: relative;
   overflow: hidden;
   
   &::before{
@@ -25,7 +26,6 @@ $textColor: #5e4b28;
     z-index: -10;
     top:650px;
     right: -45px;
-    width: 480px;
     width: 27%;
     height: calc(40vw);
     background: url(img/about-company__bg-img-2.png) center center no-repeat;
