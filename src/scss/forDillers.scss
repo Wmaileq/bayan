@@ -1,0 +1,125 @@
+.for-dillers{
+	&__top{
+		background: url(../img/materialBg.png) center center no-repeat;
+    background-size: auto auto;
+background-size: cover;
+margin-bottom: 125px;
+
+	}
+
+	&__center{
+				background: #fff url(../img/FordillersBg.png) no-repeat;
+background-size: 100% 100%;
+margin-bottom: 20px;
+height: 322px;
+	}
+	&__text{
+  font-size: 16px;
+  font-family: "Source Sans Pro";
+  color: rgb(94, 75, 40);
+  line-height: 1.438;
+
+  -moz-transform: matrix( 1,0,0,0.99999994567327,0,0);
+  -webkit-transform: matrix( 1,0,0,0.99999994567327,0,0);
+  -ms-transform: matrix( 1,0,0,0.99999994567327,0,0);
+  margin-bottom: 60px;
+	}
+
+	&__feature{
+		justify-content: flex-start;
+	}
+
+	&__item{
+		margin-right: 75px;
+	}
+	&__feature-text{
+		font-size:16px;
+		position: relative;
+		&:before{
+			position: absolute;
+			content:"";
+			height: 2px;
+			width: 76px;
+			background-color: #e6aa30;
+			left: 0;
+			top: -29px;
+		}
+	}
+
+	&__heading{
+		margin-bottom: 0px;
+		padding-top: 70px;
+	}
+
+	&__bottom{
+		display: flex;
+		flex-direction:column;
+	align-items:center;
+	text-align:center;
+	margin-top: 140px;
+	margin-bottom: 100px;
+	}
+
+	&__button{
+		margin-top: 50px;
+		height: 51px;
+		width: 327px;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+
+	}
+}
+
+
+
+
+
+
+
+.condition{
+	display: flex;
+	&__col{
+		width: 400px;
+		&_left{
+			margin-right: 50px;
+		}
+	}
+	&__item{
+		display: flex;
+		margin-bottom: 36px;
+	}
+	&__icon{
+		flex:none;
+		margin-right: 14px;
+		height: 43px;
+		width: 43px;
+		border-radius:50%;
+		bcrder-color:#e6aa30;
+		   border-style: solid;
+		border-width:3px;
+		display: flex;
+		justify-content: center;
+		align-items:center;
+  font-size: 24px;
+  font-family: "Source Sans Pro";
+  color: rgb(231, 173, 54);
+  font-weight: 700;
+  line-height: 0.958;
+
+
+
+	}
+
+	&__text{
+  font-size: 14px;
+  color: rgb(94, 75, 40);
+  line-height: 1.643;
+  -moz-transform: matrix( 1,0,0,0.99999994567327,0,0);
+  -webkit-transform: matrix( 1,0,0,0.99999994567327,0,0);
+  -ms-transform: matrix( 1,0,0,0.99999994567327,0,0);
+
+
+	}
+
+}

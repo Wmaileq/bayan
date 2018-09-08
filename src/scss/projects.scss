@@ -1,0 +1,112 @@
+.projects{
+  &__wrap{
+    padding: 0 50px;
+    @media (max-width:974px) {
+      padding: 0 0px;
+    }
+  }
+  &__item {
+    display: flex;
+    margin-top: 23px;
+    padding: 20px 0;
+    justify-content: flex-start;
+    border-radius: 8px;
+    background: linear-gradient(to right, #eaba27 0%, #e6a620 38%, #b17a13 100%);
+    color: white;
+    @media (max-width: 991px) {
+      flex-wrap: wrap;
+    }
+  }
+  &__item-img-wrap{
+    width: 255px;
+    height: 161px;
+    flex-shrink: 0;
+    margin: 0 20px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.34);
+  }
+  &__item-img{
+    display: block;
+  }
+
+  &__item-info{
+    width: 40%;
+    @media (max-width: 991px) {
+      margin-left: 22px;
+      width: calc(100% / 1 - 40px);
+      order: 3;
+    }
+  }
+
+  &__item-date-wrap{
+    padding-top: 7px;
+  }
+  &__item-date{
+    font-size: 14 / 16 * 1rem;
+    font-weight: normal;
+  }
+  &__item-date-icon{
+
+  }
+
+  &__item-title{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 18 / 16 * 1rem;
+    font-weight: bold;
+    letter-spacing: 0.050em;
+  }
+  &__item-description{
+    line-height: 1.1em;
+    font-size: 14 / 16 * 1rem;
+    font-weight: normal;
+  }
+
+  &__item-arrow-wrap{
+    display: flex;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    @media (max-width: 768px) {
+      order: 3;
+    }
+  }
+  &__item-arrow-link{
+    position: relative;
+    margin-top: 40px;
+    font-size: 18 / 16 * 1rem;
+    letter-spacing: 0.050em;
+    color: white;
+    text-align: right;
+  }
+  &__item-arrow-icon{
+    position: relative;
+    display: block;
+    margin-bottom: 12px;
+    margin-left: 93px;
+    width: 26px;
+    height: 20px;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 9.5px;
+      left: 0;
+      width: 26px;
+      height: 2px;
+      background-color: #fff;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 4px;
+      right: 2px;
+      height: 12px;
+      width: 12px;
+      border-right: 2px solid #fff;
+      border-top: 2px solid #fff;
+      transform: rotate(45deg);
+    }
+  }
+}

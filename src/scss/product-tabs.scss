@@ -1,5 +1,9 @@
 .product-tabs {
+  position: relative;
+  z-index: 1;
   padding-top: 2rem;
+  //background: url('img/product-tabs-bg.png') center center no-repeat;
+  //background-size: cover;
   &__heading {
     margin-bottom: 75px;
     text-align: center;
@@ -22,9 +26,28 @@
     justify-content: space-between;
   }
   &__product {
-    
+
   }
   &__product-img-wrapper {
+    margin-bottom: 20px;
+    padding: 4px;
+    text-align: center;
+    border-radius: 14px;
     background-color: #fff;
+    box-shadow: 0 0 27px 0 rgba(0,0,0,0.12);
+    cursor: pointer;
+    &:hover img {
+      transform: scale(1.05);
+    }
+  }
+  &__product-img {
+    transition: transform 0.25s;
+  }
+  &__product-text {
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: 'Gotham Pro', sans-serif;
+    color: #383838;
+    font-size: 16px;
   }
 }

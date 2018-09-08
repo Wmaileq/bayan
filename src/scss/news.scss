@@ -1,0 +1,64 @@
+.news{
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -180px;
+    width: 210px;
+    height: 571px;
+    background: url('img/spot_forth.png') center center no-repeat;
+    background-size: cover;
+  }
+  &__col {
+    &_col-1 {
+      max-width: 552px;
+    }
+    &_col-2 {
+      max-width: 413px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  &__head{
+    display: flex;
+    justify-content: space-around;
+    font-size:30px;
+    font-weight:900;
+    font-family:'Gotham Pro',sans-serif;
+    color:#e7a029;
+    text-transform:uppercase;
+    margin-bottom: 45px;
+  }
+
+  &__button{
+    text-transform: none;
+    font-family: 'SourceSansPro', sans-serif;
+    font-size:16px;
+    font-weight: 400;
+    color:#e7a029;
+  }
+
+  &__card{
+    margin-bottom: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.13);
+  }
+}
+
+.fa-angle-down{
+  padding-right:10px;
+}
+.fa-eye{
+  padding-right: 5px;
+}
+.fa-calendar-alt{
+  padding-right: 5px;
+}
