@@ -1,19 +1,23 @@
-.pages-head{
+.header {
   padding-top: 40px;
+  height: calc(1000px + (100vw - 1366px)*400/646);
+  background: url('img/header-bg.png') center bottom no-repeat;
+  background-size: cover;
   &__company{
     display: flex;
     flex-direction:column;
     align-items: center;
-    margin-top: 175px;
-    font-family:'Gotham Pro',sans-serif;
+    margin-top: calc(100px + (100vw - 1366px)*125/664);
     font-size:16px;
     color:white;
-    text-transform: uppercase;
   }
   &__top-title{
+    margin-left: 25px;
     font-size:12px;
     position: relative;
     transform: rotate(-27deg);
+    text-transform: uppercase;
+    font-family:'Gotham Pro',sans-serif;
     span{
       height: 200px;
       position: absolute;
@@ -96,14 +100,9 @@
   &__title{
     padding-top: 78px;
     text-align:center;
+    font-size: 18px;
+    font-weight: 400;
+    opacity: 0.8;
+    max-width: 450px;
   }
-}
-
-.fa-angle-right{
-  padding: 0px 10px;
-
-}
-.fa-arrow-down{
-  padding-top: 22px;
-  font-size:20px;
 }

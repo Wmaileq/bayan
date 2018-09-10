@@ -3,13 +3,16 @@ $lightColor: #9a9a9a;
 $textColor: #5e4b28;
 
 .about{
+  margin-top: calc(-380px - (100vw - 1366px)*170/656);
   position: relative;
+  padding-bottom: 100px;
+  background: url('img/product-tabs-bg.png') top center no-repeat;
+  background-size: cover;
   overflow: hidden;
-  
   &::before{
     content: '';
     position: absolute;
-    z-index: -10;
+    z-index: 1;
     top: 24px;
     left: 30px;
     width: 16%;
@@ -23,9 +26,9 @@ $textColor: #5e4b28;
   &::after{
     content: '';
     position: absolute;
-    z-index: -10;
+    z-index: 1;
     top:650px;
-    right: -45px;
+    right: -120px;
     width: 27%;
     height: calc(40vw);
     background: url(img/about-company__bg-img-2.png) center center no-repeat;
@@ -36,8 +39,9 @@ $textColor: #5e4b28;
   }
 
   &__wrap{
-    position: relative;
-    padding: 0 85px;
+    padding-right: 85px;
+    padding-left: 85px;
+    padding-bottom: calc(540px + (100vw - 1366px)*280/646);
     //overflow: hidden;
     @media (max-width: 991px){
       padding: 0;
@@ -127,9 +131,9 @@ $textColor: #5e4b28;
 
 
   &__item-title{
+    margin-top: 150px;
     margin-right: -300px;
     z-index: 2;
-
     font-family: 'Gotham Pro', sans-serif;
     font-size: 60px;
     color: $mainColor;
@@ -196,6 +200,21 @@ $textColor: #5e4b28;
     @media (max-width: 991px){
       text-align: justify;
     }
+  }
+  &__img-1 {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 140px;
+  }
+  &__next-link {
+    position: absolute;
+    bottom: 50px;
+    left: 400px;
+    color: #e6aa30;
+    font-size: 36px;
+    font-family: 'Gotham Pro', sans-serif;
+    text-transform: uppercase;
   }
 }
 

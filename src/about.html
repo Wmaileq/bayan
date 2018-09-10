@@ -2,32 +2,60 @@
 //=include ./components/head.html
 
 <body>
-  <section class="header">
-    <div class="container">
+<section class="header">
+  <div class="container">
+    <div class="top-menu">
       //=include ./components/top-menu.html
     </div>
-  </section>
-  <section class="about">
-    <div class="container">
-      <div class="about__wrap">
-        <div class="about__nav">
-          <div class="about__nav-item active" data-block="generalInfoBlock">Общая информация</div>
-          <span class="delimeter-dot">&#8226;</span>
-          <div class="about__nav-item" data-block="ourTeamBlock">НАША КОМАНДА</div>
-          <span class="delimeter-dot">&#8226;</span>
-          <div class="about__nav-item" data-block="historyCompanyBlock">история компании</div>
-        </div>
-        <!-- General info -->
-        <div id="generalInfoBlock" class="about__item active-item">
-          <div class="about__item-header">
-            <h3 class="about__item-title">Общая<br>информация</h3>
-            <div class="about__wrap-img">
-              <img class="about__img" src="img/general-info.png" alt="Общая информация" width="570" height="360">
-            </div>
+    //=include ./components/breadcrumbs.html
+    <div class="header__company">
+      <div class="header__top-title">
+        <span class="header__char1">Т</span>
+        <span class="header__char2">О</span>
+        <span class="header__char3">О</span>
+        <span class="header__char4"></span>
+        <span class="header__char5">К</span>
+        <span class="header__char6">О</span>
+        <span class="header__char7">М</span>
+        <span class="header__char8">П</span>
+        <span class="header__char9">А</span>
+        <span class="header__char10">Н</span>
+        <span class="header__char11">И</span>
+        <span class="header__char12">Я</span>
+        <span class="header__char13"></span>
+        <span class="header__char14">B</span>
+        <span class="header__char15">A</span>
+        <span class="header__char16">Y</span>
+        <span class="header__char17">A</span>
+        <span class="header__char18">N</span>
+      </div>
+      <div class="header__heading">О компании</div>
+      <div class="header__title">Таким образом сложившаяся структура организации требуют определения и уточнения соответствующий условий активизации</div>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <div class="container">
+    <div class="about__wrap">
+      <div class="about__nav">
+        <div class="about__nav-item active" data-block="generalInfoBlock">Общая информация</div>
+        <span class="delimeter-dot">&#8226;</span>
+        <div class="about__nav-item" data-block="ourTeamBlock">НАША КОМАНДА</div>
+        <span class="delimeter-dot">&#8226;</span>
+        <div class="about__nav-item" data-block="historyCompanyBlock">история компании</div>
+      </div>
+      <!-- General info -->
+      <div id="generalInfoBlock" class="about__item active-item">
+        <div class="about__item-header">
+          <h3 class="about__item-title">Общая<br>информация</h3>
+          <div class="about__wrap-img">
+            <img class="about__img" src="img/general-info.png" alt="Общая информация" width="570" height="360">
           </div>
-          <div class="about__wrap-text">
-            <div class="about__text-title">Lorem ipsum</div>
-            <div class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+        <div class="about__wrap-text">
+          <div class="about__text-title">Lorem ipsum</div>
+          <div class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
             dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
             non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error
@@ -36,8 +64,8 @@
             sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
             quia dolor sit amet, velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
             aliquam quaerat voluptatem.</div>
-            <div class="about__text-title">Lorem ipsum</div>
-            <div class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <div class="about__text-title">Lorem ipsum</div>
+          <div class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
             dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
             non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error
@@ -46,21 +74,23 @@
             sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
             quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
             aliquam quaerat voluptatem.</div>
+        </div>
+        <img src="img/about-img-1.png" class="about__img-1">
+        <a class="about__next-link" data-block="historyCompanyBlock">Наша команда <img src="img/arrow-next.png" alt="."></a>
+      </div>
+      <!-- //General info -->
+
+      <!-- Our team -->
+      <div id="ourTeamBlock" class="about__item">
+        <div class="about__item-header">
+          <h3 class="about__item-title">НАША<br>КОМАНДА</h3>
+          <div class="about__wrap-img">
+            <img class="about__img" src="img/general-info.png" alt="Общая информация" width="570" height="360">
           </div>
         </div>
-        <!-- //General info -->
-
-        <!-- Our team -->
-        <div id="ourTeamBlock" class="about__item">
-          <div class="about__item-header">
-            <h3 class="about__item-title">НАША<br>КОМАНДА</h3>
-            <div class="about__wrap-img">
-              <img class="about__img" src="img/general-info.png" alt="Общая информация" width="570" height="360" class="about__img">
-            </div>
-          </div>
-          <div class="about__wrap-text">
-            <div class="about__text-title">Lorem ipsum</div>
-            <div class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        <div class="about__wrap-text">
+          <div class="about__text-title">Lorem ipsum</div>
+          <div class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
             dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
             non proident, sunt in culpa qui officia deserunt molldoloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
@@ -68,8 +98,8 @@
             sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
             quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
             aliquam quaerat voluptatem.</div>
-            <div class="about__text-title">Lorem ipsum</div>
-            <div class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <div class="about__text-title">Lorem ipsum</div>
+          <div class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
             dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
             non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error
@@ -78,21 +108,21 @@
             sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
             quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
             aliquam quaerat voluptatem.</div>
+        </div>
+      </div>
+      <!-- //Our team -->
+
+      <!-- History of the company -->
+      <div id="historyCompanyBlock" class="about__item">
+        <div class="about__item-header">
+          <h3 class="about__item-title">История<br>компании</h3>
+          <div class="about__wrap-img">
+            <img class="about__img" src="img/general-info.png" alt="Общая информация" width="570" height="360">
           </div>
         </div>
-        <!-- //Our team -->
-
-        <!-- History of the company -->
-        <div id="historyCompanyBlock" class="about__item">
-          <div class="about__item-header">
-            <h3 class="about__item-title">История<br>компании</h3>
-            <div class="about__wrap-img">
-              <img class="about__img" src="img/general-info.png" alt="Общая информация" width="570" height="360" class="about__img">
-            </div>
-          </div>
-          <div class="about__wrap-text">
-            <div class="about__text-title">Lorem ipsum</div>
-            <div class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        <div class="about__wrap-text">
+          <div class="about__text-title">Lorem ipsum</div>
+          <div class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
             dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
             non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error
@@ -101,8 +131,8 @@
             sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
             quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
             aliquam quaerat voluptatem.</div>
-            <div class="about__text-title">Lorem ipsum</div>
-            <div class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <div class="about__text-title">Lorem ipsum</div>
+          <div class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
             dolor in reprehe cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
             non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error
@@ -111,18 +141,19 @@
             sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
             quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
             aliquam quaerat voluptatem.</div>
-          </div>
         </div>
-        <!-- //History of the company -->
-
       </div>
+      <!-- //History of the company -->
+
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- JQuery 3.3.1 -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+//=include ./components/footer.html
+<!-- JQuery 3.3.1 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  <script src="bundle.js"></script>
+<script src="bundle.js"></script>
 </body>
 
 </html>

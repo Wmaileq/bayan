@@ -4,7 +4,7 @@
   outline: none;
   box-sizing: border-box;
   &:hover, &:focus, &:active {
-  	outline: none
+    outline: none
   }
 }
 a {
@@ -16,10 +16,10 @@ body {
 }
 
 @font-face {
-    font-family: 'Gotham Pro';
-    src: url('fonts/GothamPro-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
+  font-family: 'Gotham Pro';
+  src: url('fonts/GothamPro-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
 }
 
 h2 {

@@ -1,6 +1,7 @@
 .produce{
   &__head{
-    background: #3b2a0f url("img/produceBg.png") 100% 100% no-repeat;
+    background: #3b2a0f url("img/produceBg.png") center center no-repeat;
+    background-size: cover;
     height: 668px;
     overflow:hidden;
   }
