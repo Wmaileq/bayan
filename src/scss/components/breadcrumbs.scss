@@ -3,7 +3,9 @@
   margin-top: 30px;
   margin-left: 68px;
   color: white;
-
+  @media (max-width: 575px) {
+    margin-left: 0px;
+  }
   &__item {
     color: white;
   }

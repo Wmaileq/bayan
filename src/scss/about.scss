@@ -1,21 +1,28 @@
 .about{
-  margin-top: calc(-380px - (100vw - 1366px)*170/656);
   position: relative;
+  margin-top: calc(-380px - (100vw - 1366px)*170/656);
   padding-bottom: 100px;
   //background: url('/img/product-tabs-bg.png') top center no-repeat;
   background-size: cover;
   overflow: hidden;
+  @media (max-width: 991px) {
+    margin-top: -300px;
+  }
   &::before{
     content: '';
     position: absolute;
     z-index: 1;
     top: 24px;
-    left: 30px;
+    left: -50px;
     width: 16%;
-    height: calc(14vw);
+    height: 14vw;
     background: url('/img/about-company__bg-img-1.png') center center no-repeat;
     background-size: cover;
-    @media (max-width: 992px){
+    @media (max-width: 991px) {
+      width: 20%;
+      height: 17vw;
+    }
+    @media (max-width: 767px){
       display: none;
     }
   }
@@ -24,12 +31,12 @@
     position: absolute;
     z-index: 1;
     top:650px;
-    right: -120px;
+    right: -160px;
     width: 27%;
     height: calc(40vw);
     background: url('/img/about-company__bg-img-2.png') center center no-repeat;
     background-size: cover;
-    @media (max-width: 992px){
+    @media (max-width: 991px){
       display: none;
     }
   }
@@ -39,8 +46,15 @@
     padding-left: 85px;
     padding-bottom: calc(540px + (100vw - 1366px)*280/646);
     //overflow: hidden;
-    @media (max-width: 991px){
-      padding: 0;
+    @media (max-width: 1199px){
+      padding-bottom: calc(340px + (100vw - 768px)*280/600);
+    }
+    @media (max-width: 991px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    @media (max-width: 560px) {
+      padding-bottom: 0;
     }
   }
 
@@ -54,7 +68,10 @@
     display: flex;
     margin: 50px 0 70px;
     justify-content: center;
-    flex-direction: row
+    flex-direction: row;
+    @media (max-width: 991px) {
+      margin-top: 0;
+    }
   }
 
   &__nav-item{
@@ -62,11 +79,11 @@
     display: inline-block;
     padding: 10px 20px;
     font-family: 'Gotham Pro', sans-serif;
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 400;
     color: #e6aa30;
     text-transform: uppercase;
-    letter-spacing: 0.75;
+    letter-spacing: 0.75px;
     cursor: pointer;
     transition: 0.2s all;
     &::after{
@@ -102,24 +119,53 @@
     justify-content: space-between;
     align-items: center;
     @media (max-width: 991px){
-      justify-content: center;
       flex-direction: column;
+      align-items: center;
     }
   }
-
 
   &__item-title{
     margin-top: 150px;
     margin-right: -300px;
-    z-index: 2;
     font-family: 'Gotham Pro', sans-serif;
-    font-size: 60px;
+    font-size: 3.75rem;
     color: #e6aa30;
+    z-index: 2;
     text-transform: uppercase;
-    letter-spacing: 0.75;
+    letter-spacing: 0.75px;
     @media (max-width: 991px){
       margin-right: 0;
+      margin-bottom: 45px;
+      margin-top: 0px;
       text-align: center;
+      font-size: 2.8rem;
+    }
+  }
+
+  &__team-title{
+    position: relative;
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 3.75rem;
+    color: #e6aa30;
+    z-index: 2;
+    text-transform: uppercase;
+    align-self: start;
+    letter-spacing: 0.75px;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      width: 76px;
+      height: 7px;
+      background-color: #e6aa30;
+    }
+    @media (max-width: 991px){
+      margin-right: 0;
+      margin-bottom: 45px;
+      margin-top: 0px;
+      text-align: center;
+      font-size: 2.8rem;
     }
   }
 
@@ -128,6 +174,9 @@
     margin: 15px;
     box-shadow: 0 0 29px rgba(0,0,0,0.3);
     border-radius: 9px;
+    @media (max-width: 767px) {
+      max-width: 100%;
+    }
     //overflow: hidden;
   }
   &__wrap-img::after{
@@ -151,6 +200,10 @@
   &__img{
     display: block;
     border-radius: 9px;
+    @media (max-width: 767px) {
+      max-width: 100%;
+      height: auto;
+    }
   }
 
   &__wrap-text{
@@ -184,6 +237,9 @@
     width: 100%;
     left: 0;
     bottom: 140px;
+    @media (max-width: 560px) {
+      display: none;
+    }
   }
   &__next-link {
     position: absolute;
@@ -194,6 +250,10 @@
     font-size: 36px;
     font-family: 'Gotham Pro', sans-serif;
     text-transform: uppercase;
+    cursor: pointer;
+    @media (max-width: 991px) {
+      left: 100px;
+    }
   }
 }
 

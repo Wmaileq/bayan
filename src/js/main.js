@@ -1,15 +1,20 @@
 $(document).ready(function () {
   // About company
   let navItem = $('.about__nav-item');
-  let block = $('.about__item');
   navItem.on('click', function () {
     navItem.removeClass('active');
     $(this).addClass('active');
-    block.removeClass('active-item');
-    let blockId = "#" + this.dataset.block;
-    $(blockId).addClass('active-item');
+    $('.about__item').removeClass('active-item');
+    $("#" + this.dataset.block).addClass('active-item');
   });
 
+  $('.about__next-link').on('click', function() {
+    $('.about__item').removeClass('active-item');
+    navItem.removeClass('active');
+    $('.about__nav-item[data-block="' + this.dataset.block + '"]').addClass('active');
+    $('#' + this.dataset.block).addClass('active-item');
+    $('html, body').animate({scrollTop: 600}, 500)
+  });
   // product page
   const slider = $('.product__horizontal');
   $(slider).slick({

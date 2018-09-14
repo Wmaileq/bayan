@@ -3,6 +3,9 @@
   height: calc(1000px + (100vw - 1366px)*400/646);
   background: url('img/header-bg.png') center bottom no-repeat;
   background-size: cover;
+  @media (max-width: 1199px) {
+    height: 920px;
+  }
   &__company{
     display: flex;
     flex-direction:column;
@@ -10,6 +13,9 @@
     margin-top: calc(100px + (100vw - 1366px)*125/664);
     font-size:16px;
     color:white;
+    @media (max-width: 1199px) {
+      margin-top: 75px;
+    }
   }
   &__top-title{
     margin-left: 25px;
@@ -82,10 +88,11 @@
     transform: rotate(54deg);
   }
   &__heading{
-    font-size:48px;
+    font-size:3rem;
     font-weight:700;
     position: relative;
     text-transform: uppercase;
+    color: #fff;
     &:after{
       content: "";
       position: absolute;
@@ -100,7 +107,7 @@
   &__title{
     padding-top: 78px;
     text-align:center;
-    font-size: 18px;
+    font-size: 1.25rem;
     font-weight: 400;
     opacity: 0.8;
     max-width: 450px;
