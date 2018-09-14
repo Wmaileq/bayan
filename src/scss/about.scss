@@ -1,12 +1,8 @@
-$mainColor: #E6AA30;
-$lightColor: #9a9a9a;
-$textColor: #5e4b28;
-
 .about{
   margin-top: calc(-380px - (100vw - 1366px)*170/656);
   position: relative;
   padding-bottom: 100px;
-  background: url('img/product-tabs-bg.png') top center no-repeat;
+  //background: url('/img/product-tabs-bg.png') top center no-repeat;
   background-size: cover;
   overflow: hidden;
   &::before{
@@ -17,7 +13,7 @@ $textColor: #5e4b28;
     left: 30px;
     width: 16%;
     height: calc(14vw);
-    background: url(img/about-company__bg-img-1.png) center center no-repeat;
+    background: url('/img/about-company__bg-img-1.png') center center no-repeat;
     background-size: cover;
     @media (max-width: 992px){
       display: none;
@@ -31,7 +27,7 @@ $textColor: #5e4b28;
     right: -120px;
     width: 27%;
     height: calc(40vw);
-    background: url(img/about-company__bg-img-2.png) center center no-repeat;
+    background: url('/img/about-company__bg-img-2.png') center center no-repeat;
     background-size: cover;
     @media (max-width: 992px){
       display: none;
@@ -65,15 +61,14 @@ $textColor: #5e4b28;
     position: relative;
     display: inline-block;
     padding: 10px 20px;
-
     font-family: 'Gotham Pro', sans-serif;
     font-size: 15px;
     font-weight: 400;
-    color: $mainColor;
+    color: #e6aa30;
     text-transform: uppercase;
     letter-spacing: 0.75;
-
-    transition: 0.3s all;
+    cursor: pointer;
+    transition: 0.2s all;
     &::after{
       content: '';
       position: absolute;
@@ -97,23 +92,6 @@ $textColor: #5e4b28;
       color: #222;
     }
   }
-  // &__nav-item::after{
-  //   position: absolute;
-  //   top: 50%;
-  //   content: "•";
-  //   display: inline-block;
-  //   margin: 0 17px;
-  //   margin-top: -7px;
-  // }
-
-  // &__nav-item:last-child::before{
-  //   position: absolute;
-  //   top: 50%;
-  //   content: "•";
-  //   display: inline-block;
-  //   margin: 0 -22px;
-  //   margin-top: -7px;
-  // }
 
   &__item{
     display: none;
@@ -136,7 +114,7 @@ $textColor: #5e4b28;
     z-index: 2;
     font-family: 'Gotham Pro', sans-serif;
     font-size: 60px;
-    color: $mainColor;
+    color: #e6aa30;
     text-transform: uppercase;
     letter-spacing: 0.75;
     @media (max-width: 991px){
@@ -178,13 +156,13 @@ $textColor: #5e4b28;
   &__wrap-text{
     //padding-right: 80px;
   }
-  
+
   &__text-title{
     margin-top: 50px;
 
     font-size: 18px;
     font-weight: 400;
-    color: $lightColor;
+    color: #9a9a9a;
     letter-spacing: 0.50;
     text-transform: uppercase;
   }
@@ -194,7 +172,7 @@ $textColor: #5e4b28;
 
     font-size: 18px;
     font-weight: 400;
-    color: $textColor;
+    color: #5e4b28;
     text-align: left;
     line-height: 1.5;
     @media (max-width: 991px){
@@ -211,6 +189,7 @@ $textColor: #5e4b28;
     position: absolute;
     bottom: 50px;
     left: 400px;
+    font-weight: 700;
     color: #e6aa30;
     font-size: 36px;
     font-family: 'Gotham Pro', sans-serif;
@@ -226,5 +205,5 @@ $textColor: #5e4b28;
 .delimeter-dot{
   display: inline-block;
   padding: 11px 0 9px;
-  color: $mainColor;
+  color: #e6aa30;
 }

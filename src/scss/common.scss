@@ -10,6 +10,15 @@
 a {
   text-decoration: none;
 }
+html {
+  font-size: 16px;
+  @media (max-width: 991px) {
+    font-size: 14px;
+  }
+  @media (max-width: 575px) {
+    font-size: 12px;
+  }
+}
 body {
   font-family: 'SourceSansPro', sans-serif;
   background-color: #f8f8f8;
@@ -17,14 +26,22 @@ body {
 
 @font-face {
   font-family: 'Gotham Pro';
-  src: url('fonts/GothamPro-Bold.woff') format('woff');
+  src: url('/fonts/GothamPro.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('/fonts/GothamPro-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
 
+
 h2 {
   font-family: 'Gotham Pro', sans-serif;
   color: #e7a029;
-  font-size: 36px;
+  font-size: 2.25rem;
   text-transform: uppercase;
 }

@@ -24,6 +24,7 @@ const path = {
   },
   src: {
     html: 'src/*.html',
+    htmlComponents: 'src/components/*.html',
     libs: 'src/scss/libs/*.css',
     components: 'src/scss/components/*.scss',
     styles: 'src/scss/*.scss',
@@ -72,7 +73,7 @@ function buildCSS() {
 }
 
 function buildJS() {
-  return gulp.src([path.src.js + 'main.js'])
+  return gulp.src([path.src.js + 'slick.min.js', path.src.js + 'main.js'])
     .pipe(concatjs('bundle.js'))
     // .pipe(babel({
     //   presets: ['env']
@@ -98,6 +99,7 @@ const build = gulp.series(buildHTML, buildCSS, buildJS, buildImgs, buildFonts);
 
 function watch() {
   gwatch(path.src.html, buildHTML);
+  gwatch(path.src.htmlComponents, buildHTML);
   gwatch(path.src.styles, buildCSS);
   gwatch(path.src.components, buildCSS);
   gwatch(path.src.libs, buildCSS);

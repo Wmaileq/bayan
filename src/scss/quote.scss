@@ -2,6 +2,9 @@
 .quote{
   position: relative;
   margin-bottom: 91px;
+  @media (max-width: 575px) {
+    margin-bottom: 65px;
+  }
   &:before {
     content: '';
     position: absolute;
@@ -9,23 +12,33 @@
     top: -120px;
     width: 127px;
     height: 590px;
-    background: url('img/spot_sec.png') center center no-repeat;
+    background: url('/img/spot_sec.png') center center no-repeat;
     background-size: cover;
+    @media (max-width: 575px){
+      display: none;
+    }
   }
 
   &__container{
     display: flex;
+    @media (max-width: 767px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__img-cont{
     height: 367px;
     width: 299px;
+    @media (max-width: 767px){
+      margin-bottom: 40px;
+    }
     &:before{
       content:"";
       position: absolute;
       height: 167px;
       margin-top: 255px;
-      background: url(img/quoteElips.png) no-repeat;
+      background: url('/img/quoteElips.png') no-repeat;
       width: 100%;
     }
   }
@@ -59,8 +72,11 @@
   }
 
   &__description{
-    margin-left: 67px;
-    width: 657px;
+    padding-left: 67px;
+    max-width: 657px;
+    @media (max-width: 767px) {
+      padding-left: 0;
+    }
   }
 
   &__abzac{
@@ -92,5 +108,8 @@
     font-size:16px;
     color:white;
     border-radius:22px;
+    @media (max-width: 767px){
+      margin: 0 auto;
+    }
   }
 }

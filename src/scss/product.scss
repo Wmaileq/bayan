@@ -1,0 +1,196 @@
+.product {
+  display: flex;
+  padding-top: 37px;
+  padding-bottom: 52px;
+  min-height: 100vh;
+  background: url('./img/milk1.png') center center no-repeat, linear-gradient(-60deg, rgba(234, 159, 40, 0.7) 0%, rgba(234, 159, 40, 0.7) 47%, rgba(235, 191, 38, 0.7) 100%) center center no-repeat;
+  background-color: #f61616;
+  background-size: auto, 100%;
+  &__top-menu {
+    color: #fff;
+    .top-menu__phone {
+      color: #fff;
+    }
+  }
+  &__wrapper {
+    position: relative;
+  }
+  &__horizontal {
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  &__arrow-left {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 50%;
+    padding-top: 60px;
+    font-size: 14px;
+    font-family: 'Gotham Pro', sans-serif;
+    color: #fff;
+    cursor: pointer;
+    max-width: 100px;
+    &:hover:after {
+      left:12px
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 50px;
+      height: 50px;
+      background-color: #d7681e;
+      border-radius: 50%;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      left: 24px;
+      top: 15px;
+      width: 35px;
+      height: 24px;
+      background: url('/img/arrow-white.png') center center no-repeat;
+      background-size: cover;
+      transition: left 0.2s;
+    }
+  }
+  &__arrow-right {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: 2;
+    padding-top: 60px;
+    font-size: 14px;
+    font-family: 'Gotham Pro', sans-serif;
+    color: #fff;
+    text-align: right;
+    cursor: pointer;
+    max-width: 100px;
+    &:hover:after {
+      right:12px
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 50px;
+      height: 50px;
+      background-color: #d7681e;
+      border-radius: 50%;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      right: 24px;
+      top: 15px;
+      width: 35px;
+      height: 24px;
+      background: url('/img/arrow-white.png') center center no-repeat;
+      background-size: cover;
+      transform: rotate(180deg);
+      transition: right 0.2s;
+    }
+  }
+  &__slide-hor-wrapper {
+    display: flex;
+  }
+  &__hor-image-wrapper {
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 322px;
+      height: 322px;
+      background-image: linear-gradient(-17deg, rgba(215, 130, 30, 0.54) 0%, rgba(167, 65, 25, 0.54) 100%);
+      background-color: #d7681e;
+      border-radius: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+  &__hor-image {
+    position: relative;
+    z-index: 2;
+  }
+  &__heading {
+    position: relative;
+    margin-bottom: 50px;
+    font-size: 55px;
+    font-weight: 700;
+    font-family: 'Gotham Pro', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #fff;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      width: 78px;
+      height: 7px;
+      background-color: #fff;
+    }
+  }
+  &__text {
+    margin-bottom: 35px;
+    font-size: 14px;
+    font-family: 'Gotham Pro', sans-serif;
+    color: #fff;
+  }
+  &__button {
+    margin-bottom: 25px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    &:hover {
+      box-shadow: 0 0 14px 2px rgba(#fff, 0.4);
+      background: #fff;
+      color: #c09022;
+    }
+    &_filled {
+      background-color: #fff;
+      color: #c09022;
+    }
+  }
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__back {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Gotham Pro', sans-serif;
+    &:before {
+      content: '';
+      margin-right: 15px;
+      display: block;
+      width: 48px;
+      height: 23px;
+      background: url('/img/arrow-white-long.png') center center no-repeat;
+      background-size: cover;
+    }
+  }
+  &__dillers {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Gotham Pro', sans-serif;
+    &:after {
+      content: '';
+      margin-left: 15px;
+      display: block;
+      width: 48px;
+      height: 23px;
+      background: url('/img/arrow-white-long.png') center center no-repeat;
+      background-size: cover;
+      transform: rotate(180deg);
+    }
+  }
+}

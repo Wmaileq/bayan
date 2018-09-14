@@ -9,9 +9,14 @@
     text-align: center;
   }
   &__buttons-wrapper {
-    margin-bottom: 60px;
+    margin-bottom: 4rem;
     display: flex;
     justify-content: center;
+    @media (max-width: 767px) {
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-bottom: 2rem;
+    }
   }
   &__button {
     margin-right: 25px;
@@ -20,13 +25,25 @@
     padding-right: 1.8rem;
     color: #cd9029;
     border-radius: 25px;
+    font-size: 1rem;
+    @media (max-width: 991px) {
+      text-align: center;
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 25px;
+      margin-right: 0;
+    }
+    &:last-of-type {
+      margin-right: 0;
+    }
   }
   &__content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
   &__product {
-
+    margin: 0 10px 25px;
   }
   &__product-img-wrapper {
     margin-bottom: 20px;

@@ -1,14 +1,8 @@
-
-$footerColor: #2f2c26;
-$footerTextCol: #f8f8f8;
-$footerTextColAdd: #716F6D;
-
 .footer{
   width: 100%;
-  background-color: $footerColor;
-
+  background-color: #2f2c26;
   font-family: 'SourceSansPro', sans-serif;
-  color: $footerTextCol;
+  color: #f8f8f8;
   &__wrap{
     padding-top: 25px;
     display: flex;
@@ -18,16 +12,19 @@ $footerTextColAdd: #716F6D;
     }
   }
 
-
   &__info-col{
     width: 35%;
     margin-bottom: -30px;
+    @media (max-width: 1199px) {
+      margin-right: 15px;
+    }
     @media (max-width: 992px) {
       order: 2;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       width: 100%;
-      margin-bottom: 40px;
+      margin-bottom: 0px;
+      margin-right: 0;
     }
   }
   &__logo-wrap{
@@ -39,7 +36,6 @@ $footerTextColAdd: #716F6D;
     }
   }
   &__logo{
-
     &-name{
       display: flex;
       margin-left: 20px;
@@ -67,9 +63,8 @@ $footerTextColAdd: #716F6D;
   &__info-item{
     margin: 18px 0;
     font-size: 0.875rem;
-    color: $footerTextColAdd;
+    color: #716f6d;
     line-height: 1.2;
-    white-space: nowrap;
     @media (max-width: 768px) {
       text-align: center;
     }
@@ -80,9 +75,13 @@ $footerTextColAdd: #716F6D;
     width: 40%;
     height: 200px;
     @media (max-width: 992px) {
-      order: 1;
+      order: 4;
       width: 100%;
       margin-bottom: 40px;
+      margin-top: 40px;
+    }
+    @media (max-width: 767px) {
+      display: none;
     }
   }
 
@@ -106,7 +105,7 @@ $footerTextColAdd: #716F6D;
     line-height: 1.5;
     font-size: 0.9375rem;
     white-space: nowrap;
-    color: $footerTextCol;
+    color: #f8f8f8;
   }
   &__nav-item:hover{
     color: #e4Ad2c;
@@ -118,7 +117,8 @@ $footerTextColAdd: #716F6D;
     @media (max-width: 992px) {
       order: 3;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
+      order: 1;
       justify-content: center;
       width: 100%;
       margin-bottom: 40px;
@@ -131,6 +131,8 @@ $footerTextColAdd: #716F6D;
     background-color: #e4Ad2c;
     border-radius: 8px;
     &-title{
+      padding-left: 10px;
+      padding-right: 10px;
       margin-bottom: 11px;
       text-align: center;
       font-size: 1.125rem;
@@ -156,10 +158,6 @@ $footerTextColAdd: #716F6D;
       border-radius: 19px;
       background-color: #f9efd5;
     }
-    &-input:focus + &-label{
-      opacity: 0;
-      transition: opacity 0.3s linear;
-    }
     &-btn{
       width: calc(100% / 1 - 54px);
       margin: 14px 27px auto;
@@ -179,6 +177,6 @@ $footerTextColAdd: #716F6D;
     height: 55px;
     font-size: 0.875rem;
     letter-spacing: 0;
-    color: $footerTextColAdd;
+    color: #716f6d;
   }
 }

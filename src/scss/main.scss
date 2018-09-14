@@ -1,10 +1,21 @@
 .main {
   position: relative;
-  padding-top: 35px;
-  background: url('img/main-bg.png') top center no-repeat;
+  padding-top: 40px;
+  background: url('img/main-bg.png') bottom center no-repeat;
   background-size: cover;
-  @media (min-width: 1366px) {
-    min-height: calc(825px + ((100vw - 1366px)*325/554));
+  min-height: calc(825px + ((100vw - 1366px)*325/554));
+  @media (max-width: 1365px) {
+    min-height: 825px;
+  }
+  @media (max-width: 1050px) {
+    min-height: 750px;
+  }
+  @media (max-width: 991px) {
+    min-height: 680px;
+    padding-top: 25px;
+  }
+  @media (max-width: 380px) {
+    min-height: 650px;
   }
   &:before {
     content: '';
@@ -12,8 +23,16 @@
     left: 0;
     bottom: -80px;
     background: url('img/spot_yellow.png') center center no-repeat;
+    background-size: cover;
     width: 202px;
     height: 442px;
+    @media (max-width: 767px) {
+      width: 180px;
+      height: 370px;
+    }
+    @media (max-width: 575px) {
+      display: none;
+    }
   }
   &:after {
     content: '';
@@ -24,18 +43,32 @@
     height: calc(661px + ((100vw - 1366px)*268/554);
     background: url('img/main-bottles.png') center center no-repeat;
     background-size: cover;
-  }
-  @media (min-width: 1366px) {
-    min-height: calc(825px + ((100vw - 1366px)*325/554));
+    @media (max-width: 1199px) {
+      right: 0;
+    }
+    @media (max-width: 991px) {
+      display: none;
+    }
   }
 
   &__menu {
-    padding-left: 80px;
     margin-bottom: calc(45px + ((100vw - 1366px)*90/554);
+    @media (max-width: 1365px) {
+      margin-bottom: 45px;
+    }
   }
 
   &__wrapper {
     padding-left: 80px;
+    @media (max-width: 991px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-left: 60px;
+    }
+    @media (max-width: 575px) {
+      padding-left: 0;
+    }
   }
 
   &__heading {
@@ -46,6 +79,10 @@
     color: #e4a72e;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    @media (max-width: 991px) {
+      font-size: 32px;
+      text-align: center;
+    }
   }
 
   &__text {
@@ -53,11 +90,20 @@
     font-size: 1rem;
     color: #fff;
     max-width: 480px;
+    @media (max-width: 991px) {
+      text-align: center;
+    }
+    @media (max-width: 400px) {
+      margin-bottom: 35px;
+    }
   }
 
   &__button-wrapper {
     display: flex;
     align-items: center;
+    @media (max-width: 400px) {
+      flex-direction: column;
+    }
   }
 
   &__button {
@@ -66,6 +112,9 @@
     color: #24300b;
     font-size: 1rem;
     border-radius: 27px;
+    @media (max-width: 400px) {
+      margin-bottom: 25px;
+    }
   }
 
   &__hint {
@@ -75,11 +124,22 @@
   }
 
   &__video {
+    position: relative;
     padding-left: 80px;
     display: flex;
     width: 430px;
     align-items: center;
     margin-top: 250px;
+    @media (max-width: 1366px) {
+      margin-top: 150px;
+    }
+    @media (max-width: 1050px) {
+      margin-top: 100px;
+    }
+    @media (max-width: 991px) {
+      padding-left: 0;
+      max-width: 300px;
+    }
   }
 
   &__watch {
@@ -93,9 +153,9 @@
     height: 87px;
     flex-shrink: 0;
     cursor: pointer;
-    transition: transform 0.35s ease;
+    transition: transform 0.2s ease;
     &:hover {
-      transform: rotate(360deg)
+      transform: scale(1.1)
     }
   }
   &__watch-text {

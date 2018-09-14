@@ -8,11 +8,26 @@
   color:white;
   background: url("img/bgMain-offer.png") no-repeat center center;
   background-size: cover;
-
+  @media (max-width: 1199px) {
+    margin-top: -240px;
+  }
+  @media (max-width: 991px) {
+    padding-top: 380px;
+    padding-bottom: 60px;
+    margin-bottom: 50px;
+  }
+  @media (max-width: 767px){
+    padding-top: 320px;
+  }
+  @media (max-width: 575px) {
+    text-align: center;
+  }
   &__img-wrap{
     position: absolute;
     bottom: 50px;
-    // круг у бутылок вверху
+    @media (max-width: 767px) {
+      display: none;
+    }
     &:after{
       content: '';
       position: absolute;
@@ -21,8 +36,10 @@
       height: 55px;
       width: 55px;
       background: url("img/Main-offerHelp.png") no-repeat right top;
+      @media (max-width: 960px) {
+        display: none;
+      }
     }
-    // надпись у круга
     &:before{
       content: 'Товарный ряд  молочной продукции';
       position: absolute;
@@ -36,10 +53,12 @@
       font-size:14px;
       justify-content: flex-end;
       align-items: center;
+      @media (max-width: 960px) {
+        display: none;
+      }
     }
   }
 
-  // бутылочки слева секции
   &__img{
     position: relative;
     width: calc(533px + (100vw - 1366px)*216/554;
@@ -48,25 +67,34 @@
 
   &__container{
     margin-left: 457px;
+    @media (max-width: 991px) {
+      margin-left: 250px;
+    }
+    @media (max-width: 767px) {
+      margin-left: 0;
+    }
   }
 
-  // Заголовок
   &__heading{
-    padding-bottom: 42px;
-    font-size:30px;
+    margin-bottom: 42px;
+    font-size:1.875rem;
     font-family: 'Gotham Pro', sans-serif;
     font-weight: 700;
+    @media (max-width: 1100px) {
+      margin-bottom: 21px;
+    }
   }
 
-  // Подзаголовок
   &__title{
-    padding-bottom: 52px;
+    margin-bottom: 52px;
     font-size:20px;
     font-weight:400;
     font-family: 'Source Sans Pro', sans-serif;
+    @media (max-width: 1100px) {
+      margin-bottom: 25px;
+    }
   }
 
-  //отступ от кнопки для bg
   &__btn-wrap{
     display: flex;
     align-items: center;
@@ -77,7 +105,7 @@
     height: 52px;
     border-radius:26px;
     color:white;
-    font-size:18px;
+    font-size:1.125rem;
   }
 }
 
