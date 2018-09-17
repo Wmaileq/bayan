@@ -1,6 +1,12 @@
 .pageNews{
   background: url("img/materialBg.png")  top center no-repeat;
   background-size: 100% 50%;
+  &__wrapper {
+    margin-top: calc(-320px - (100vw - 992px)*18/100);
+    @media (max-width: 991px) {
+      margin-top: -300px;
+    }
+  }
   &__news-card{
     width: 753px;
     margin-bottom: 49px;
@@ -24,6 +30,8 @@
 
 
 .last-anonse{
+  background: url("img/materialBg.png")  top center no-repeat;
+  background-size: 100% 50%;
   &__item{
     height: 346px;
     background:url("img/lasanonse1.jpg") center top no-repeat;
@@ -73,6 +81,8 @@
 
 
 .shares{
+  background: url("img/materialBg.png")  top center no-repeat;
+  background-size: 100% 50%;
   margin-bottom: 50px;
   &__text{
     font-size: 16px;

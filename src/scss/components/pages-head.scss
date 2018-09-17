@@ -78,10 +78,13 @@
     transform: rotate(54deg);
   }
   &__heading{
-    font-size:48px;
+    font-size: 3rem;
     font-weight:700;
     position: relative;
     text-transform: uppercase;
+    @media (max-width: 575px) {
+      text-align: center;
+    }
     &:after{
       content: "";
       position: absolute;

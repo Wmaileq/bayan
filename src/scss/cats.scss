@@ -1,6 +1,7 @@
 .cats{
+  margin-top: -450px;
   background: url("img/materialBg.png") no-repeat top center;
-
+  background-size: cover;
   &__news-reviews{
     display: flex;
     flex-direction: column;

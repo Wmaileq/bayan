@@ -6,6 +6,9 @@
   background: url('./img/milk1.png') center center no-repeat, linear-gradient(-60deg, rgba(234, 159, 40, 0.7) 0%, rgba(234, 159, 40, 0.7) 47%, rgba(235, 191, 38, 0.7) 100%) center center no-repeat;
   background-color: #f61616;
   background-size: auto, 100%;
+  @media (max-width:575px) {
+    padding-bottom: 25px;
+  }
   &__top-menu {
     color: #fff;
     .top-menu__phone {
@@ -14,11 +17,22 @@
   }
   &__wrapper {
     position: relative;
+    @media (max-width: 575px){
+      margin-top: 25px;
+    }
   }
   &__horizontal {
     display: flex;
     padding-left: 100px;
     padding-right: 100px;
+    @media (max-width: 991px) {
+      padding-left: 75px;
+      padding-right: 75px;
+    }
+    @media (max-width: 575px) {
+      padding-left: 0px;
+      padding-right: 40px;
+    }
   }
   &__arrow-left {
     position: absolute;
@@ -31,6 +45,9 @@
     color: #fff;
     cursor: pointer;
     max-width: 100px;
+    @media (max-width: 575px) {
+      display: none;
+    }
     &:hover:after {
       left:12px
     }
@@ -99,6 +116,13 @@
   }
   &__hor-image-wrapper {
     position: relative;
+    @media (max-width: 991px) {
+      max-width: 30%;
+      flex-shrink: 0;
+    }
+    @media (max-width: 767px) {
+      display: none;
+    }
     &:before {
       content: '';
       position: absolute;
@@ -110,21 +134,33 @@
       background-color: #d7681e;
       border-radius: 50%;
       transform: translate(-50%,-50%);
+      @media (max-width: 991px) {
+        display: none;
+      }
     }
   }
   &__hor-image {
     position: relative;
     z-index: 2;
+    @media (max-width: 991px) {
+      max-width: 110%;
+    }
   }
   &__heading {
     position: relative;
     margin-bottom: 50px;
-    font-size: 55px;
+    font-size: 3.5rem;
     font-weight: 700;
     font-family: 'Gotham Pro', sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     color: #fff;
+    @media (max-width: 1199px) {
+      font-size: 3rem;
+    }
+    @media (max-width: 575px) {
+      font-size: 2.5rem;
+    }
     &:after {
       content: '';
       position: absolute;
@@ -163,7 +199,7 @@
   &__back {
     display: flex;
     align-items: center;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #fff;
     font-family: 'Gotham Pro', sans-serif;
     &:before {
@@ -179,9 +215,12 @@
   &__dillers {
     display: flex;
     align-items: center;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #fff;
     font-family: 'Gotham Pro', sans-serif;
+    @media (max-width: 575px) {
+      text-align: right;
+    }
     &:after {
       content: '';
       margin-left: 15px;
@@ -191,6 +230,119 @@
       background: url('/img/arrow-white-long.png') center center no-repeat;
       background-size: cover;
       transform: rotate(180deg);
+    }
+  }
+  &__vertical {
+    display: none;
+  }
+  &__slide-vert {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+    .product__heading {
+      text-transform: none;
+    }
+  }
+  &__first {
+    max-width: 29%;
+    flex-grow: 0;
+    @media (max-width: 767px) {
+      max-width: none;
+      margin-bottom: 25px;
+    }
+  }
+  &__sec {
+    position: relative;
+    flex-grow: 1;
+    @media (max-width: 767px) {
+      max-width: none;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 322px;
+      height: 322px;
+      background-image: linear-gradient(-17deg, rgba(215, 130, 30, 0.54) 0%, rgba(167, 65, 25, 0.54) 100%);
+      background-color: #d7681e;
+      border-radius: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+  &__image-wrapper {
+    position: relative;
+    text-align: center;
+  }
+  &__name {
+    position: absolute;
+    top: 80px;
+    left: 340px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: 'Gotham Pro', sans-serif;
+    font-weight: 700;
+    transform: rotate(45deg);
+    @media (max-width: 1199px) {
+      left: 300px;
+    }
+    @media (max-width: 991px) {
+      left: auto;
+      right: 0;
+      top: 70px;
+      transform: rotate(40deg)
+    }
+  }
+  &__vert-nav {
+    position: absolute;
+    top: 50%;
+    right: 90px;
+    font-size: 0.925rem;
+    max-width: 140px;
+    @media (max-width: 1199px) {
+      right: 60px;
+    }
+    @media (max-width: 991px) {
+      right: 0px;
+    }
+  }
+  &__arrow-top {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    transition: transform 0.2s;
+    &:hover {
+      transform: rotate(45deg) translate(-5px, -5px)
+    }
+  }
+  &__arrow-bottom {
+    margin-top: 10px;
+    margin-left: 20px;
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #fff;
+    width: 30px;
+    height: 30px;
+    transform: rotate(-45deg);
+    cursor: pointer;
+    transition: transform 0.2s;
+    &:hover {
+      transform: rotate(-45deg) translate(-5px, 5px)
+    }
+  }
+  &__last {
+    max-width: 20%;
+    flex-grow: 0;
+    @media (max-width: 767px) {
+      max-width: none;
+      margin-bottom: 25px;
     }
   }
 }

@@ -1,8 +1,50 @@
 .contacts{
   position: relative;
-  z-index: -1;
-  background: transparent url('img/product-tabs-bg.png') center center no-repeat;
+  margin-top: calc(-320px - (100vw - 320px)/12);
   background-size: cover;
+
+  &__tabs {
+    margin-bottom: calc(35px + (100vw - 320px)*65/1600);
+    display: flex;
+    justify-content: center;
+  }
+  &__tab {
+    position: relative;
+    padding: 10px 20px;
+    color: #eda023;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s all;
+    @media (max-width: 575px) {
+      padding: 5px 10px;
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      left: 20%;
+      bottom: 0;
+      width: 0;
+      height: 3px;
+      margin-left: 0;
+      background-color: #000;
+      transition: 0.5s all;
+    }
+    &.active {
+      color: #333333;
+    }
+    &:hover::after,
+    &.active::after{
+      width: 60%;
+      transition: 1s all;
+    }
+
+    &:hover,
+    &.active{
+      color: #222;
+    }
+  }
+
   &__heading{
     color:#eda023;
     margin-bottom: 25px;
@@ -14,10 +56,18 @@
 
   &__top{
     display: flex;
-    flex:none;
     justify-content: space-around;
     margin-bottom: 80px;
-    margin-top: -200px;
+    @media (max-width: 991px) {
+      flex-wrap:wrap;
+      & > div {
+        margin-bottom: 25px;
+      }
+      @media (max-width: 575px) {
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+    }
   }
 
   &__heading-title{
@@ -34,6 +84,10 @@
     width: 210px;
     &-bottom{
       min-width: 600px;
+      @media (max-width: 767px) {
+        min-width: auto;
+        width: auto;
+      }
     }
   }
 
@@ -61,6 +115,9 @@
     padding-top: 70px;
     padding-bottom: 60px;
     padding-left: 20px;
+    @media (max-width: 575px) {
+      padding-left: 0;
+    }
     p:last-of-type {
       margin-bottom: 0;
     }
