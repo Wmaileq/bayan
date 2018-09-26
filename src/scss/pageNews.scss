@@ -10,10 +10,10 @@
   &__news-card{
     width: 753px;
     margin-bottom: 49px;
-    background-position: 441px 0;
-  }
-  &__news-card-double{
-    background-image: url(img/pageNewacard.jpg);
+    background-position: 441px 0!important;
+    @media (max-width: 991px){
+      max-width: 100%;
+    }
   }
 
   &__news{
@@ -33,12 +33,13 @@
   background: url("img/materialBg.png")  top center no-repeat;
   background-size: 100% 50%;
   &__item{
-    height: 346px;
+    padding-bottom: 30px;
     background:url("img/lasanonse1.jpg") center top no-repeat;
-    background-size:100% 100%;
+    background-size: cover;
     &_second{
       text-align:right;
       background-image:url("img/lasanonse2.jpg");
+      background-size: cover;
       margin-bottom: 80px;
     }
   }
@@ -57,17 +58,16 @@
   }
   &__text{
     font-size: 15px;
-    font-family: "Gotham Pro";
+    font-family: "Gotham Pro", sans-serif;
     font-weight:400;
     color: rgb(255, 255, 255);
     line-height: 1.2;
-    width: 616px;
+    max-width: 616px;
   }
   &__button{
     height: 45px;
     width: 214px;
-    background:none;
-    background-color: #fff;
+    background: #fff;
     font-size:15px;
     color:#b67622;
     margin-top: 35px;
@@ -79,7 +79,6 @@
   }
 }
 
-
 .shares{
   background: url("img/materialBg.png")  top center no-repeat;
   background-size: 100% 50%;
@@ -88,7 +87,7 @@
     font-size: 16px;
     color: rgb(128, 98, 38);
     line-height: 1.2;
-    width: 1000px;
+    max-width: 1000px;
     margin-bottom: 50px;
   }
   &__head{
@@ -99,32 +98,56 @@
   }
 
   &__item{
-    height: 346px;
-
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media (max-width: 767px) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
     &_green{
-      background-color: #95b84a;
+      background: url('/img/discounts-bg.png') center center no-repeat;
+      background-size: cover;
     }
     &_blue{
-      background-color: #4ea9bd;
+      background: url('/img/discounts-bg_blue.png') center center no-repeat;
+      background-size: cover;
     }
     &_red{
-      background-color: #dc5f3d;
+      background: url('/img/discounts-bg_red.png') center center no-repeat;
+      background-size: cover;
     }
   }
 
   &__wrap{
     display: flex;
     align-items:center;
+    justify-content: center;
+    & > img {
+      margin-right: 15px;
+      max-width: 380px;
+      @media (max-width: 767px) {
+        max-width: 250px;
+      }
+      @media (max-width: 575px) {
+        max-width: calc(100vw/2.8);
+      }
+    }
   }
 
   &__name{
-    font-size: 101px;
+    font-size: 6.3125rem;
     font-family: "Maloishe", sans-serif;
     color: rgb(255, 255, 255);
     line-height: 0.782;
-    -moz-transform: matrix( 1.07810906950833,0.01339842346632,-0.01339842346632,1.07810906950833,0,0);
-    -webkit-transform: matrix( 1.07810906950833,0.01339842346632,-0.01339842346632,1.07810906950833,0,0);
-    -ms-transform: matrix( 1.07810906950833,0.01339842346632,-0.01339842346632,1.07810906950833,0,0);
     margin-left: 90px;
+    @media (max-width: 1199px){
+      margin-left: 0;
+    }
+    @media (max-width: 767px) {
+      font-size: 5.5rem;
+    }
+    @media (max-width: 575px) {
+      font-size: calc(100vw/8);
+    }
   }
 }

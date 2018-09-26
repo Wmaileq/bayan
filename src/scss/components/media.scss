@@ -16,32 +16,32 @@ html элемента
 //передать ширину и высоту квадрата в &__box
 //прозрачность в  &__img{
 
- .media{
-	border-radius:10px;
-	box-shadow: 0 0 29px 0 rgba(0,0,0,0.13);
-	background-color: #3a3121;
-	position: relative;
-	flex:none;
+.media{
+  border-radius:10px;
+  box-shadow: 0 0 29px 0 rgba(0,0,0,0.13);
+  background-color: #3a3121;
+  position: relative;
+  flex:none;
 
- 	&__img{
-		opacity: 0.3;
-		width: 100%;
-		height: 100%;
-		border-radius:10px;
-	}
+  &__img{
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    border-radius:10px;
+  }
 
-	&__box{
+  &__box{
     content:"";
     position: absolute;
     right: -10px;
     top: -10px;
-		z-index:-1;
-		background: #e7a029 linear-gradient(to left,rgba(234,159,40,.7),rgba(208,200,68,.7));
-		box-shadow: 0 0 24px 7px rgba(206,182,49,.3);
-		border-radius: 10px;
-		&_left{
-				left: -10px;
-				background: #e7a029 linear-gradient(to right,rgba(234,159,40,.7),rgba(208,200,68,.7));
-		}
-	}
- }
+    z-index:-1;
+    background: #e7a029 linear-gradient(to left,rgba(234,159,40,.7),rgba(208,200,68,.7));
+    box-shadow: 0 0 24px 7px rgba(206,182,49,.3);
+    border-radius: 10px;
+    &_left{
+      left: -10px;
+      background: #e7a029 linear-gradient(to right,rgba(234,159,40,.7),rgba(208,200,68,.7));
+    }
+  }
+}

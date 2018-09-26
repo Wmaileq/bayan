@@ -7,7 +7,6 @@
   line-height: 1.2;
   position: relative;
   margin-bottom: 120px;
-  padding-top: 100px;
   @media (max-width: 767px){
     font-size: 3rem;
     padding-top: 0;
@@ -43,6 +42,15 @@
   }
   &_mbB{
     margin-bottom: 150px;
+    @media (max-width: 1199px){
+      margin-bottom: 120px;
+    }
+    @media (max-width: 991px) {
+      margin-bottom: 90px;
+    }
+    @media (max-width: 767px){
+      margin-bottom: 60px;
+    }
   }
 
 

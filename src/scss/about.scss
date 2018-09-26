@@ -31,6 +31,11 @@
     @media (max-width: 991px) {
       margin-top: 0;
     }
+    @media (max-width: 575px){
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-bottom: 35px;
+    }
   }
 
   &__nav-item{
@@ -45,6 +50,10 @@
     letter-spacing: 0.75px;
     cursor: pointer;
     transition: 0.2s all;
+    @media (max-width: 575px){
+      padding: 5px 10px;
+      font-size: 0.75rem;
+    }
     &::after{
       content: '';
       position: absolute;
