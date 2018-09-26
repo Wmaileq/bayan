@@ -1,15 +1,15 @@
 .dillers{
-  margin-top: -400px;
+  margin-top: calc(-280px - (100vw - 320px)/12);
   &__top{
-    //background:  url(../img/materialBg.png) center center no-repeat;
-    //background-size: cover;
     margin-bottom: 125px;
-
+    @media (max-width: 767px){
+      margin-bottom: 85px;
+    }
   }
 
   &__center{
-    background: url(../img/FordillersBg.png) no-repeat;
-    background-size: 100% 100%;
+    background: url(../img/FordillersBg.png) center center no-repeat;
+    background-size: cover;
     margin-bottom: 20px;
     height: 322px;
   }
@@ -18,19 +18,21 @@
     font-family: "Source Sans Pro", sans-serif;
     color: rgb(94, 75, 40);
     line-height: 1.438;
-
-    -moz-transform: matrix( 1,0,0,0.99999994567327,0,0);
-    -webkit-transform: matrix( 1,0,0,0.99999994567327,0,0);
-    -ms-transform: matrix( 1,0,0,0.99999994567327,0,0);
     margin-bottom: 60px;
   }
 
   &__feature{
     justify-content: flex-start;
+    @media (max-width: 575px){
+      justify-content: space-around;
+    }
   }
 
   &__item{
     margin-right: 75px;
+    @media (max-width: 991px) {
+      margin-right: 0;
+    }
   }
   &__feature-text{
     font-size:16px;
@@ -43,6 +45,12 @@
       background-color: #e6aa30;
       left: 0;
       top: -29px;
+      @media (max-width: 767px) {
+        left: calc(50% - 38px);
+      }
+      @media (max-width: 575px){
+        top: -14px
+      }
     }
   }
 
@@ -58,6 +66,10 @@
     text-align:center;
     margin-top: 140px;
     margin-bottom: 100px;
+    @media (max-width: 991px) {
+      margin-top: 80px;
+      margin-bottom: 80px;
+    }
   }
 
   &__button{
@@ -71,23 +83,23 @@
   }
 }
 
-
-
-
-
-
-
 .condition{
   display: flex;
   &__col{
     width: 400px;
     &_left{
       margin-right: 50px;
+      @media (max-width: 575px){
+        margin-right: 15px;
+      }
     }
   }
   &__item{
     display: flex;
     margin-bottom: 36px;
+    @media (max-width: 480px){
+      flex-direction: column;
+    }
   }
   &__icon{
     flex:none;
@@ -95,31 +107,20 @@
     height: 43px;
     width: 43px;
     border-radius:50%;
-    bcrder-color:#e6aa30;
-    border-style: solid;
-    border-width:3px;
+    border: 3px solid #e6aa30;
     display: flex;
     justify-content: center;
     align-items:center;
     font-size: 24px;
-    font-family: "Source Sans Pro";
+    font-family: "Source Sans Pro", sans-serif;
     color: rgb(231, 173, 54);
     font-weight: 700;
     line-height: 0.958;
-
-
-
   }
 
   &__text{
     font-size: 14px;
     color: rgb(94, 75, 40);
     line-height: 1.643;
-    -moz-transform: matrix( 1,0,0,0.99999994567327,0,0);
-    -webkit-transform: matrix( 1,0,0,0.99999994567327,0,0);
-    -ms-transform: matrix( 1,0,0,0.99999994567327,0,0);
-
-
   }
-
 }

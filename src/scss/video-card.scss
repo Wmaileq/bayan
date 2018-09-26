@@ -45,6 +45,10 @@
   &__production-video{
     height: 337px;
     width: 408px;
+    &:hover:before {
+      visibility: visible;
+      transform: scale(1,1);
+    }
     @media (max-width:991px) {
       height: 250px;
       width: 333px;
@@ -68,9 +72,9 @@
         display: none;
       }
     }
-    // надпись у круга
     &:before{
       position: absolute;
+      visibility: hidden;
       background: url("img/video-cardHelpLine.png") 150px  5px no-repeat;
       content: 'Товарный ряд молочной продукции';
       padding-right: 140px;
@@ -81,6 +85,9 @@
       width: 290px;
       display: flex;
       align-items: center;
+      transform: scale(0,1);
+      transform-origin: right top;
+      transition: transform 0.2s;
       @media (max-width:991px) {
         display: none;
       }
@@ -125,10 +132,11 @@
   }
 
   &__vid-text{
+    font-family: 'Gotham Pro', sans-serif;
     font-size:1.5rem;
-    font-weight:900;
+    font-weight:700;
     color:white;
-    padding-left: 73px;
+    padding-left: 5.5rem;
   }
 
   &__box{

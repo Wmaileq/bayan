@@ -25,6 +25,10 @@
   &__img-wrap{
     position: absolute;
     bottom: 50px;
+    &:hover:before {
+      visibility: visible;
+      transform: scale(1,1);
+    }
     @media (max-width: 767px) {
       display: none;
     }
@@ -46,6 +50,7 @@
       top: calc(48px + (100vw - 1366px)*10/554);
       right: calc(-110px + (100vw - 1366px)*100/554);
       display: flex;
+      visibility: hidden;
       width: 290px;
       padding-left: 60px;
       background: url("img/main-offerHelpLine.png") -5px 5px no-repeat ;
@@ -53,6 +58,9 @@
       font-size:14px;
       justify-content: flex-end;
       align-items: center;
+      transform: scale(0, 1);
+      transition: transform 0.2s;
+      transform-origin: 0 0;
       @media (max-width: 960px) {
         display: none;
       }

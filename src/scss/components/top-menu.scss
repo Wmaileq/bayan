@@ -110,14 +110,25 @@
     }
   }
   &__callback {
+    position: relative;
     font-size: 1rem;
     color: #fff;
     flex-grow: 0;
     margin-left: auto;
-    border-bottom: 1px solid #fff;
     transition: border-bottom 0.15s;
-    &:hover {
-      border-bottom: 1px solid transparent;
+    &:hover:after {
+      left: 0;
+      width: 100%;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      width: 0;
+      height: 1px;
+      background-color: #fff;
+      transition: width 0.2s, left 0.2s;
     }
   }
 }

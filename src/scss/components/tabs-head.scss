@@ -11,10 +11,12 @@
     font-size: 3rem;
     padding-top: 0;
     letter-spacing: 3px;
+    margin-bottom: 90px;
   }
   @media (max-width: 575px){
     font-size: 2.5rem;
     letter-spacing: 1px;
+    margin-bottom: 45px;
   }
   &:after{
     content: "";

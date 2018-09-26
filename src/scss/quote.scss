@@ -30,6 +30,8 @@
   &__img-cont{
     height: 367px;
     width: 299px;
+    overflow: hidden;
+    background-color: transparent;
     @media (max-width: 767px){
       margin-bottom: 40px;
     }

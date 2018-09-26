@@ -34,12 +34,12 @@
       display: none;
     }
   }
-  &:after {
+  &__bottles {
     content: '';
     position: absolute;
     bottom: 0;
     right: 100px;
-    width: calc(618px + ((100vw - 1366px)*250/554);
+    width: calc(628px + ((100vw - 1366px)*250/554);
     height: calc(661px + ((100vw - 1366px)*268/554);
     background: url('img/main-bottles.png') center center no-repeat;
     background-size: cover;
@@ -48,6 +48,93 @@
     }
     @media (max-width: 991px) {
       display: none;
+    }
+    &:hover {
+      .main__bottles-hint-1 {
+        transition-delay: 0.15s;
+        color: #e7a32b;
+        &:after {
+          visibility: visible;
+          transform: rotate(45deg) scale(1,1);
+        }
+      }
+      .main__bottles-hint-2 {
+        transition-delay: 0.15s;
+        color: #e7a32b;
+        &:after {
+          visibility: visible;
+          transform: rotate(10deg) scale(1,1);
+        }
+      }
+    }
+  }
+
+  &__bottles-hint-1 {
+    position: absolute;
+    bottom:300px;
+    left: 100px;
+    font-size: 0.875rem;
+    max-width: calc(8rem + 110px);
+    padding-bottom: 150px;
+    padding-right: 110px;
+    color: transparent;
+    transition: color 0.2s;
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 55px;
+      height: 55px;
+      background: url('/img/Main-offerHelp.png') center center no-repeat;
+      background-size: cover;
+    }
+    &:after {
+      content: '';
+      visibility: hidden;
+      position: absolute;
+      bottom: 40px;
+      right: 40px;
+      width: 150px;
+      height: 1px;
+      background-color: #dfaf33;
+      transform: rotate(45deg) scale(0,0);
+      transform-origin: right bottom;
+      transition: transform 0.2s;
+    }
+  }
+  &__bottles-hint-2 {
+    position: absolute;
+    bottom:90px;
+    right: 60px;
+    font-size: 0.875rem;
+    max-width: calc(8rem + 150px);
+    padding-top: 40px;
+    padding-left: 150px;
+    color: transparent;
+    transition: color 0.2s;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 55px;
+      height: 55px;
+      background: url('/img/Main-offerHelp.png') center center no-repeat;
+      background-size: cover;
+    }
+    &:after {
+      content: '';
+      visibility: hidden;
+      position: absolute;
+      top: 30px;
+      left: 40px;
+      width: 100px;
+      height: 1px;
+      background-color: #dfaf33;
+      transform: rotate(10deg) scale(0,0);
+      transform-origin: top left;
+      transition: transform 0.2s;
     }
   }
 
@@ -118,9 +205,24 @@
   }
 
   &__hint {
+    position: relative;
     margin-left: 25px;
     font-size: 1rem;
     color: #fff;
+    &:hover:after {
+      left: 0;
+      width: 100%;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      width: 0;
+      height: 1px;
+      background-color: #fff;
+      transition: width 0.2s, left 0.2s;
+    }
   }
 
   &__video {
@@ -153,9 +255,10 @@
     height: 87px;
     flex-shrink: 0;
     cursor: pointer;
-    transition: transform 0.2s ease;
+    transition: transform 0.35s ease;
+    transform-origin: center center;
     &:hover {
-      transform: scale(1.1)
+      transform: rotate(360deg);
     }
   }
   &__watch-text {
